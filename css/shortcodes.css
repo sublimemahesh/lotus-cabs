@@ -1402,7 +1402,11 @@ a.learn-more{
     margin-top: 25px;
     display: inline-block;
 }
-
+.image-b{
+    background-image: url("../images/about-us/car.jpg");
+    background-repeat: no-repeat;  
+    
+}
 /* - Counter Style2 */
 .counter-style2 {
     background-image: url("../images/counter-app/counter-bg.jpg");
