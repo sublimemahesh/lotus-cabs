@@ -17,7 +17,7 @@ class Database {
 //    private $password = 'Masal@903430';
      
     private $host = 'localhost';
-    private $name = 'new_admin';
+    private $name = 'lotus_cabs';
     private $user = 'root';
     private $password = '';
 
