@@ -68,9 +68,7 @@
         <?php include './header.php'; ?>
         <!-- Header /- -->
 
-        <!-- Photo Slider -->	
-        <?php include './slider.php'; ?>
-        <!-- Photo Slider/- -->
+       
       
         
 

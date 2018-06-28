@@ -132,6 +132,11 @@ a.see-more:hover{
     margin-top: 70px;
 
 }
+.section-header3 {
+    margin-bottom: 45px;
+    margin-top: 0px;
+
+}
 
 .section-header h3 {
     position: relative;	
@@ -183,24 +188,27 @@ a.see-more:hover{
     margin: 0;
 }
 .choose-img-box1::before { 
-    content: "";
+   content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -38px;
-    height:	65px;
+    left: 0px;
+    right: -2px;
+    top: -29px;
+    height: 59px;
+    background-color: #ededed;
     transform: skewY(-10deg);
+    z-index: -2;
 }
 .choose-us-content-box {
     position: absolute;
-    left: 20px;
-    bottom: -100px;		
+    left: 36px;
+    bottom: -100px;
     background-color: #fff;
-    padding: 7px 39px 45px 11px;
-    border-right: 1px solid #d9d9d9;
+    padding: 12px 6px 60px 16px;
+    
     border-bottom: 1px solid #d9d9d9;
     box-shadow: 2px 2px 0 #ededed;
     z-index: 1;
+    right: -25px;
 }
 .choose-us-content-box,
 .choose-us-content-box::before,
@@ -214,22 +222,32 @@ a.see-more:hover{
 }
 .choose-us-content-box::before { 
     content: "";
+
     position: absolute;
+
     left: 0;
+
     right: 0;
-    top: -29px;
-    height:	60px;
+
+    top: -30px;
+
+    height: 60px;
+
     background-color: #fff;
+
     transform: skewY(-10deg);
+
     z-index: -1;
+
+    width: 309px;
 }
 .choose-us-content-box::after {
     content: "";
     position: absolute;
     left: 0px;
-    right: -2px;
-    top: -29px;
-    height:	59px;
+    right: 0px;
+    top: -30px;
+    height: 59px;
     background-color: #ededed;
     transform: skewY(-10deg);
     z-index: -2;
@@ -674,6 +692,7 @@ a.see-more:hover{
     width: 100%;
     position: relative;
     padding-bottom: 65px;
+    background-image:cover;
 }
 .service-b::before {
     position: absolute;
@@ -685,7 +704,7 @@ a.see-more:hover{
     bottom: 0;
     right: 0;
     display: inline-block;
-    
+
 }
 .service-b > img{
     position: relative;
@@ -1010,12 +1029,27 @@ a.see-more:hover{
     margin-top: -1px;
 }
 
+.blog-content2 {
+
+    padding: 30px 5px;
+    text-align: left;
+    margin-top: -1px;
+}
+
 .blog-content .entry-title {
     font-size: 14px;
     font-weight: 600;
     margin: 0;
     color: #222;
     margin-bottom: 8px;
+}
+.blog-content2 .entry-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+    margin-bottom: 8px;
+    text-align: center;
 }
 .entry-content p {
     font-size: 13px;
@@ -1405,7 +1439,7 @@ a.learn-more{
 .image-b{
     background-image: url("../images/about-us/car.jpg");
     background-repeat: no-repeat;  
-    
+
 }
 /* - Counter Style2 */
 .counter-style2 {
