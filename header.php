@@ -93,7 +93,7 @@ margin-top: 4px;"/>
 
                 </li>
                 <li class="dropdown">								
-                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <a href="gallery.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
                     <i class="ddl-switch fa fa-angle-down"></i>
 
                 </li>
