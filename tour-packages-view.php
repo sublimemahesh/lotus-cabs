@@ -68,6 +68,19 @@
         <!-- Header -->
         <?php include './header.php'; ?>
         <!-- Header /- -->
+        
+         <!-- Banner Section -->
+        <div id="page-banner" class="page-banner faq-banner container-fluid no-padding">
+            <div class="page-heading">
+                <h3>About Us</h3>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">About Us</a></li>
+                </ol>
+            </div>
+        </div><!-- Banner Section /- -->
+        
+        
 
         <div class="container-fluid no-padding page-content">
             <!-- Page Content -->
