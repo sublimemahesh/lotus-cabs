@@ -69,22 +69,70 @@
         <!-- Header /- -->
 
 
+        <!-- Banner Section -->
+        <div id="page-banner" class="page-banner faq-banner container-fluid no-padding">
+            <div class="page-heading">
+                <h3>About Us</h3>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">About Us</a></li>
+                </ol>
+            </div>
+        </div><!-- Banner Section /- -->
 
         <!-- What We Do -->
         <div class="container no-padding what-we-do ">
             <!-- Container -->
-            <div class="container-fluid " style="margin-top: 80px;" >			
-                <div class=" row">
-                    <div class="col-md-12 col-sm-6pull-left">
-                        <div class="about">
-                            <h3>Sri lanka Lotus cabs </h3>
-                            <h2>About us</h2>
-
-                            <p class="text-justify" style="color: black;"><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the likeIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like</b></p>
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="images/about-us/eye.png" alt=""/>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="entry-title">Our Vission</h3>
+                        <div class="entry-content">
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
 
-                    <div class=" col-md-6 pull-right" style="margin-top: -350px;position: static;padding: 0;opacity: 0.4;width: 40%">
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+                        <img src="images/about-us/response-value.png" alt=""/>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="entry-title">Our Vission</h3>
+                        <div class="entry-content">
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="text-center">
+                        <img src="images/about-us/vission.png" alt=""/>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="entry-title">Our Vission</h3>
+                        <div class="entry-content">
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid " style="margin-top: 80px;" >			
+                <div class=" row">
+                    <div class="section-header"><h3>About Us.</h3></div>
+                    <div class="col-md-8 col-sm-6pull-left">
+                        <div class="about">
+                            <p class="text-justify" style="color: black;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the likeIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now uses. </p>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-6 pull-right" style="margin-top: -360px;position: static;padding: 0;opacity: 0.4;width: 40%">
                         <img src="images/about-us/car1.jpg" alt="service" />
                     </div>
                 </div>

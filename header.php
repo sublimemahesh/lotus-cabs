@@ -41,6 +41,12 @@
             </div>
             <div class="col-md-6 pull-right">
 
+<!--                <div class="location">
+                    <img src="images/icon/email.png" alt="Location" style="width: 20%;
+float: left;
+margin-left: -18px;
+margin-top: 4px;"/>
+                    <p>Email,<span> Chalanadulaj99@gmail.com.</span></p>
             </div>-->
             <div class="phone">
                 <img src="images/icon/email.png" alt="Location" style="width: 20%;float: left;
