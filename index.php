@@ -91,11 +91,11 @@
             <div class="section-padding"></div>
         </div>
         <!-- What We Do/- -->
+        
         <!-- Choose Us -->
-        <div class="container-fluid no-padding " style="padding-top: 140px;">
-            <div class="section-padding"></div>
+        <div class="container no-padding service-b" style="margin-top: 360px;;">
             <!-- Container -->
-            <div class="container service-b">
+            <div class="container ">
                 <div class="section-header2 we-do-more2">
                     <h2>Services </h2>				
                 </div>
@@ -141,8 +141,6 @@
             </div><!-- Container/- -->
         </div>
         <!-- Choose Us/- -->
-
-
 
 
         <!-- -news -->
@@ -267,7 +265,9 @@
                 </div>
             </div>
             <div class="section-padding"></div>
-        </div><!-- - news-  -->
+        </div>
+        <!-- - news-  -->
+        
         <!-- Testimonial -->
         <div class="container-fluid no-padding testimonial">
             <img src="images/border-pattern.jpg" alt="border"/>
@@ -285,7 +285,6 @@
                             <div class="text-center">
                                 <img src="images/services/Kathrin.png" alt="" width="10%" />
                             </div>
-
                         </div>
 
                         <div class="item">
