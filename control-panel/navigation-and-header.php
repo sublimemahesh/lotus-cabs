@@ -289,7 +289,7 @@
                     </a>
 
                 </li>
-                <li class="qqq">
+<!--                <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Attraction</span>
@@ -340,7 +340,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
@@ -388,7 +388,7 @@
                         </li>
                     </ul>
                 </li>
-                 <li>
+<!--                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Tour Package-Normal</span>
@@ -413,7 +413,7 @@
                             </a>
                         </li>
                     </ul>
-                 </li>
+                 </li>-->
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
@@ -473,7 +473,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+<!--                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Offer</span>
@@ -498,9 +498,9 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 
-                 <li class="qqq">
+<!--                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Product Type</span>
@@ -525,9 +525,9 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
               
-                <li>
+<!--                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Room</span>
@@ -552,7 +552,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>

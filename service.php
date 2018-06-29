@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include_once ('class/include.php');
+?>
 <head>
     <meta charset="utf-8">
 
@@ -82,80 +85,25 @@
         <div class="container">
 
             <div class="row"  style="margin-top: 30px;">
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
+                <div class="section-header we-do-more2">
+                    <h2>Our Services</h2>				
+                </div>
+                <?php foreach (Service::all() as $key => $services) { ?>
+                    <div class="col-md-4" >
+                        <div class="choose-us-box1">
+                            <div class="choose-img-box2">
+                                <img src="upload/service/<?php echo $services['image_name'] ?>" alt=""/>
+                            </div>
+                            <div class="choose-us-content-box1">
+                                <h3><?php echo $services['title'] ?></h3>
+                                <p class="text-justify"><?php echo substr($services['short_description'], 0, 110); ?>...</p>
+                                <a href="#">Read More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" >
-                    <div class="choose-us-box1">
-                        <div class="choose-img-box2">
-                            <img src="photos/4.jpg" alt=""/>
-                        </div>
-                        <div class="choose-us-content-box1">
-                            <h3>taxi</h3>
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-               
-
+                    <?php
+                }
+                ?>
             </div>
 
         </div>

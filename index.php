@@ -95,7 +95,7 @@ include_once ('class/include.php');
             <div class="section-padding"></div>
         </div>
         <!-- What We Do/- -->
-        
+
         <!-- Choose Us -->
         <div class="container no-padding service-b" style="margin-top: 360px;;">
             <!-- Container -->
@@ -104,43 +104,25 @@ include_once ('class/include.php');
                     <h2>Services </h2>				
                 </div>
                 <!-- Choose Carousel -->
-                <div class="choose-carousel">			
-                    <div class="col-md-12">
-                        <div class="choose-us-box">
-                            <div class="choose-img-box1">
-                                <img src="photos/4.jpg" alt=""/>
-                            </div>
-                            <div class="choose-us-content-box">
-                                <h3>taxi</h3>
-                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="choose-us-box">
-                            <div class="choose-img-box1">
-                                <img src="photos/3.jpg" alt=""/>
-                            </div>
-                            <div class="choose-us-content-box">
-                                <h3>Airport drop</h3>
-                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                                <a href="#">Read More</a>
+                <div class="choose-carousel">
+                    <?php foreach (Service::all() as $key => $services) {
+                        ?>
+                        <div class="col-md-12">
+                            <div class="choose-us-box">
+                                <div class="choose-img-box1">
+                                    <img src="upload/service/<?php echo $services['image_name'] ?>" alt=""/>
+                                </div>
+                                <div class="choose-us-content-box">
+                                    <h3><?php echo $services['title']?></h3>
+                                    <p class="text-justify"><?php echo substr($services['short_description'],0,110);?>...</p>
+                                    <a href="#">Read More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="choose-us-box">
-                            <div class="choose-img-box1">
-                                <img src="photos/5.jpg" alt=""/>
-                            </div>
-                            <div class="choose-us-content-box">
-                                <h3>Tours</h3>
-                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                        <?php
+                    }
+                    ?>
+
                 </div><!-- Choose Carousel/- -->
             </div><!-- Container/- -->
         </div>
@@ -271,7 +253,7 @@ include_once ('class/include.php');
             <div class="section-padding"></div>
         </div>
         <!-- - news-  -->
-        
+
         <!-- Testimonial -->
         <div class="container-fluid no-padding testimonial">
             <img src="images/border-pattern.jpg" alt="border"/>
