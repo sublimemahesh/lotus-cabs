@@ -81,79 +81,80 @@
         <!-- Banner Section /- -->
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-4" style="margin-top: 30px;">
-                    <div class="choose-us-box">
+            <div class="row"  style="margin-top: 30px;">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="choose-us-box">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="choose-us-box">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="choose-us-box">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="choose-us-box">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="choose-us-box">
+                <div class="col-md-4" >
+                    <div class="choose-us-box1">
                         <div class="choose-img-box2">
                             <img src="photos/4.jpg" alt=""/>
                         </div>
-                        <div class="choose-us-content-box">
+                        <div class="choose-us-content-box1">
                             <h3>taxi</h3>
                             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
+               
 
             </div>
 
