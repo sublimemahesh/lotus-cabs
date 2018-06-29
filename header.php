@@ -86,7 +86,7 @@ margin-top: 4px;"/>
 
                 </li>
                 <li><a href="about-us.php">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
+                <li><a href="service.php">Our Services</a></li>
                 <li class="dropdown">
                     <a href="tour-packages.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Tour Package</a>
                     <i class="ddl-switch fa fa-angle-down"></i>
