@@ -161,6 +161,11 @@ a.see-more:hover{
     margin-bottom: 60px;
     max-width: 320px;
 }
+.choose-us-box1 {	
+    position: relative;
+    margin-bottom: 60px;
+    max-width: 320px;
+}
 .choose-img-box {
     display: inline-block;
     position: relative;
@@ -301,6 +306,94 @@ a.see-more:hover{
     color: #fff;
 }
 .choose-us-box:hover .choose-us-content-box {
+    background-color: #0fa0ce;
+    color: #fff;	
+}
+
+.choose-us-content-box1 {
+    position: absolute;
+    left: 36px;
+    bottom: -48px;
+    background-color: #fff;
+    padding: 12px 6px 6px 16px;
+    
+    z-index: 1;
+    right: -25px;
+}
+.choose-us-content-box1,
+.choose-us-content-box1::before,
+.choose-us-content-box1 h3,
+.choose-us-content-box1 p,
+.choose-us-content-box1 a { 
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+.choose-us-content-box1::before { 
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    top: -30px;
+
+    height: 60px;
+
+    background-color: #fff;
+
+    transform: skewY(-10deg);
+
+    z-index: -1;
+
+    width: 309px;
+}
+.choose-us-content-box1::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -30px;
+    height: 59px;
+    background-color: #ededed;
+    transform: skewY(-10deg);
+    z-index: -2;
+}
+.choose-us-box1:hover .choose-us-content-box1::before { 
+    background-color: #0fa0ce;
+}
+.choose-us-content-box1 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;	
+    padding-bottom: 10px;
+}
+.choose-us-content-box1 p {
+    font-size: 13px;
+    color: #999999;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.choose-us-content-box1 a {
+    text-decoration: none;
+    color: #0fa0ce;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    float: right;
+    clear: both;
+    padding-right: 5px;
+}
+.choose-us-box1:hover .choose-us-content-box1 a,
+.choose-us-box1:hover .choose-us-content-box1 p {
+    color: #fff;
+}
+.choose-us-box1:hover .choose-us-content-box1 {
     background-color: #0fa0ce;
     color: #fff;	
 }
@@ -3114,6 +3207,11 @@ a.learn-more{
 
     /* -- choose US */
     .choose-us-box {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto 60px;
+    }
+    .choose-us-box1 {
         max-width: 320px;
         display: block;
         margin: 0 auto 60px;
