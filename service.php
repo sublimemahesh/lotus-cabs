@@ -80,44 +80,83 @@
         </div>
         <!-- Banner Section /- -->
         <div class="container">
-          
-            <div class="row"style="padding-top: 30px;">
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="images/services/1.jpg" alt=""/>
-                    </div>
-                    <div class="blog-content2">
-                        <h3 class="entry-title">KDH</h3>
-                        <div class="entry-content">
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <div class="row">
+                <div class="col-md-4" style="margin-top: 30px;">
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="images/services/2.jpg" alt=""/>
-                    </div>
-                    <div class="blog-content2">
-                        <h3 class="entry-title">Axio </h3>
-                        <div class="entry-content">
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="images/services/3.jpg" alt=""/>
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
-                    <div class="blog-content2">
-                        <h3 class="entry-title">KDH</h3>
-                        <div class="entry-content">
-                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="choose-us-box">
+                        <div class="choose-img-box2">
+                            <img src="photos/4.jpg" alt=""/>
+                        </div>
+                        <div class="choose-us-content-box">
+                            <h3>taxi</h3>
+                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-           
+
         </div>
 
 

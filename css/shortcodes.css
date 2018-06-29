@@ -198,6 +198,25 @@ a.see-more:hover{
     transform: skewY(-10deg);
     z-index: -2;
 }
+.choose-img-box2 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.choose-img-box2 img {
+    margin: 0;
+}
+.choose-img-box2::before { 
+   content: "";
+    position: absolute;
+    left: 0px;
+    right: -2px;
+    top: -29px;
+    height: 59px;
+  
+    transform: skewY(-10deg);
+    z-index: -2;
+}
 .choose-us-content-box {
     position: absolute;
     left: 36px;
@@ -205,8 +224,6 @@ a.see-more:hover{
     background-color: #fff;
     padding: 12px 6px 60px 16px;
     
-    border-bottom: 1px solid #d9d9d9;
-    box-shadow: 2px 2px 0 #ededed;
     z-index: 1;
     right: -25px;
 }
