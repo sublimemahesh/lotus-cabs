@@ -13,9 +13,7 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-                                   
-                                    <h2> <?php echo $slider_image['title']?> </h2>
-                                    <p><?php echo $slider_image['description']?></p>							
+                                    <p><?php echo $slider_image['title'] ?></p>							
                                     <a href="#" title="Learn More" class="learn-more">Learn More</a>		
                                     <a href="#" title="Purchase" class="purchase">Purchase</a>
                                 </div>
@@ -30,9 +28,7 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-                                  
-                                    <h2><?php echo $slider_image['title']?> </h2>
-                                    <p><?php echo $slider_image['description']?></p>							
+                                    <p><?php echo $slider_image['title'] ?></p>							
                                     <a href="#" title="Learn More" class="learn-more">Learn More</a>		
                                     <a href="#" title="Purchase" class="purchase">Purchase</a>
                                 </div>

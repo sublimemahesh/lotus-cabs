@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/lotus-cabs/service.php</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/control-panel/navigation-and-header.php</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/css/navigation-menu.css</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/slider.php</file>
             <file>file:/C:/xampp/htdocs/lotus-cabs/header.php</file>
-            <file>file:/C:/xampp/htdocs/lotus-cabs/index.php</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/control-panel/post-and-get/slider.php</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/control-panel/create-offer.php</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/css/shortcodes.css</file>
+            <file>file:/C:/xampp/htdocs/lotus-cabs/control-panel/post-and-get/service.php</file>
         </group>
     </open-files>
 </project-private>

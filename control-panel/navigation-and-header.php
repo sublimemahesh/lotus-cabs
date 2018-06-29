@@ -473,10 +473,10 @@
                         </li>
                     </ul>
                 </li>
-<!--                <li>
+                <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
-                        <span>Offer</span>
+                        <span>News</span>
                     </a>
                     <ul class="ml-menu">
                         <li>
@@ -498,7 +498,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>-->
+                </li>
                 
 <!--                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">

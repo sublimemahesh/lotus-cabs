@@ -36,10 +36,7 @@ if (isset($_POST['create'])) {
     $SLIDER->image_name = $imgName;
 
     $VALID->check($SLIDER, [
-        'title' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
-        'url' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE]
+        
     ]);
 
     if ($VALID->passed()) {
@@ -99,10 +96,7 @@ if (isset($_POST['update'])) {
 
     $VALID = new Validator();
     $VALID->check($SLIDER, [
-        'title' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
-        'url' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE]
+       
     ]);
 
     if ($VALID->passed()) {
