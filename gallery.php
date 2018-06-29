@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include_once './class/include.php'; ?> 
 <head>
     <meta charset="utf-8">
 
@@ -80,20 +81,27 @@
             </div>
         </div>
         <!-- Banner Section /- -->
-        <section id="gallery">
-            <div class="container">
-            <div class="col-md-3">
-                <div class="gallery">
-                    <a href="images/services/service-1.jpg" class="big"><img src="images/services/service-1.jpg" alt="" title="lotus-Galle" style="padding-bottom: 31px; padding-top: 40px;"/></a>
-                    <div class="clear"></div>
+        <div class="container">
+            <section id="gallery">
+                <div class="row">
+                    <?php
+                    $ALBUM_PHOTO = new AlbumPhoto(NULL);
+                    $IMAGES = $ALBUM_PHOTO->getAlbumPhotosById(3);
+                    
+                    foreach ($IMAGES as $image) {
+                    ?>
+                    <div class="col-md-3">
+                        <div class="gallery">
+                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 31px; padding-top: 40px;"/></a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <?php }
+                    ?>
+
                 </div>
-            </div>
-            </div>
-        </section>
-        
-
-
-
+            </section>
+        </div>
         <!--Footer -->
         <?php include './footer.php'; ?>
         <!--Footer End-->

@@ -5,11 +5,11 @@
             <aside class="widget widget-subscribe">
                 <div class="subscribe-box">
                     <h4>Subscribe To Mail!</h4>
-                    <p>Get our Daily email n.ewsletter with Special Services, Updates, Offers and more</p>
+                    <p>Get our Daily email newsletter with Special Services, Updates, Offers and more</p>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Email Address">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">SignUp</button>
+                            <button class="btn btn-default" type="button">Sign Up</button>
                         </span>
                     </div><!-- /input-group -->
                 </div>
@@ -39,7 +39,7 @@
         <div class="col-md-4 col-sm-6">
             <aside class="widget widget-about">
                 <h3 class="widget-title">about Us</h3>
-                <p>Hello we are Comre. We are here to provide you the best offers through our coupons. Hello we are We are here to provide you coupons.</p>
+                <p>Hello we are Come. We are here to provide you the best offers through our coupons. Hello we are We are here to provide you coupons.</p>
                 <ul>
                     <li><img src="images/icon/ftr-location.png" alt="Address" />Hirimbura Cross Road,<span>Galle.</span></li>
                     <li><img src="images/icon/ftr-customer.png" alt="Phone" /> Customer Support : <span>0917 223 223</span></li>
