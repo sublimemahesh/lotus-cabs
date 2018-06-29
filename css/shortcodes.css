@@ -1913,6 +1913,9 @@ a.learn-more{
 .blog-area .blog-post-list {
     margin-top: 60px;
 }
+.blog-area .blog-post-list2 {
+    margin-top: 45px;
+}
 .blog-area .blog-post-list .meta-inner .tags > a > img {
     display: inline-block;
     margin-right: 10px;
@@ -1979,9 +1982,25 @@ a.learn-more{
     color: #030303;
     margin-bottom: 23px;
 }
+.widget-title2 {
+    display: inline-block;
+margin-top: -28px;
+    margin-bottom: 30px;
+    background-image: url("../images/icon/widget-title-seprator.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+}
+.widget-title h3 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #030303;
+    margin-bottom: 23px;
+}
 
 /* - Search Widget */
-.search-widget .input-group {
+.search-widget2 .input-group {
     width: 100%;
     position: relative;
     border: 1px solid #f2f2f2;
