@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include_once ('class/include.php');
+?>
+
 <head>
     <meta charset="utf-8">
 
@@ -68,8 +72,8 @@
         <?php include './header.php'; ?>
         <!-- Header /- -->
 
-        
-         <!-- Banner Section -->
+
+        <!-- Banner Section -->
         <div id="page-banner" class="page-banner faq-banner container-fluid no-padding">
             <div class="page-heading">
                 <h3>Tour Packages</h3>
@@ -79,8 +83,8 @@
                 </ol>
             </div>
         </div><!-- Banner Section /- -->
-        
-        
+
+
         <div class="row">
             <div class="container-fluid no-padding blog">
                 <div class="section-padding1"></div>
@@ -89,60 +93,26 @@
                         <h2>Tour Packages</h2>				
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="blog-post-list">
-                                <div class="entry-cover" style="padding-bottom: 10px;">
-                                    <a href="#">
-                                        <img src="images/tour/-1344981811_199858159095_1502352290_n.jpg" alt=""/>
-                                    </a>
-                                  
-                                    
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="entry-title">Well Trained Drivers On Duty</h3>
-                                    <div class="entry-content">
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="tour-packages-view.php" title="Read More" class="pull-right">Read More</a>
+                        <?php foreach (TourPackage::all() as $tour_package) { ?>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <article class="blog-post-list">
+                                    <div class="entry-cover" style="padding-bottom: 10px;">
+                                        <a href="#">
+                                            <img src="upload/tour-package/<?php echo $tour_package['image_name'];?>" alt=""/>
+                                        </a>
                                     </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="blog-post-list">
-                                <div class="entry-cover"  style="padding-bottom: 10px;">
-                                    <a href="#">
-                                        <img src="images/tour/-1660127464_199543013442_1502352377_n.jpg" alt=""/>
-                                    </a>
-                                   
-                                    
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="entry-title">Got The Airport Shuttle Contract</h3>
-                                    <div class="entry-content">
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" class="pull-right">Read More</a>
+                                    <div class="blog-content">
+                                        <h3 class="entry-title"><?php echo $tour_package['title']?></h3>
+                                        <div class="entry-content">
+                                            <p class="text-justify"><?php echo substr($tour_package['short_description'],0,120)?>...</p>
+                                            <a href="tour-packages-view.php?id=<?php echo $tour_package['id']?>" title="Read More" class="pull-right">Read More</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <article class="blog-post-list">
-                                <div class="entry-cover"  style="padding-bottom: 10px;">
-                                    <a href="#">
-                                        <img src="images/tour/-1101936204_200101204702_1502352531_n.jpg" alt=""/>
-                                    </a>
-                                  
-                                    
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="entry-title">Why Should Companies Offer Taxi</h3>
-                                    <div class="entry-content">
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" class="pull-right">Read More</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                                </article>
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
                 </div>
                 <div class="section-padding"></div>

@@ -10,7 +10,7 @@
                 <li><a href="#"><img src="images/icon/dribbble-ic.png" alt="dribbler" /></a></li>
                 <li><a href="#"><img src="images/icon/tw-ic.png" alt="Twitter" /></a></li>
             </ul>
-            <div class="col-md-8 pull-right top-menu">
+<!--            <div class="col-md-8 pull-right top-menu">
                 <div class="no-bottom-margin">
                     <a href="#">
                         <img src="images/flags/002-china.png"/>
@@ -25,7 +25,7 @@
                     <a href="#">
                         <img src="images/flags/kuwait.png"/>
                     </a></div>
-            </div>
+            </div>-->
         </div><!-- Container /- -->
     </div><!-- Top Header /- -->
 

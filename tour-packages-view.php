@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+include_once ('class/include.php');
+
+$id = $_GET['id'];
+$TourId = new TourPackage($id);
+$Tour_Date = new TourDate(null);
+$tour_dates = $Tour_Date->getTourDatesById($id);
+?>
+
+
 <head>
     <meta charset="utf-8">
 
@@ -68,19 +78,19 @@
         <!-- Header -->
         <?php include './header.php'; ?>
         <!-- Header /- -->
-        
-         <!-- Banner Section -->
+
+        <!-- Banner Section -->
         <div id="page-banner" class="page-banner faq-banner container-fluid no-padding">
             <div class="page-heading">
-                <h3>About Us</h3>
+                <h3>Tour Package</h3>
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">About Us</a></li>
+                    <li class="active"><a href="#">Tour Package</a></li>
                 </ol>
             </div>
         </div><!-- Banner Section /- -->
-        
-        
+
+
 
         <div class="container-fluid no-padding page-content">
             <!-- Page Content -->
@@ -90,43 +100,40 @@
                 <!-- Blog Area -->
                 <div class="col-md-12 blog-area" style="padding:20px 0px ">		
                     <div class="section-header">
-                        <h3>Recent Updates From Our Blog</h3>
+                        <h3><?php echo $TourId->title ?></h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
+                <?php
+                foreach ($tour_dates as $key => $tour_date) {
+                    ?>
+                    <?php
+                    foreach (TourDatePhoto::getTourDatePhotosById($tour_date['id'])as $key => $photo_album) {
+                        if ($key < 4) {
+                            ?>
+                            <div class="col-md-3" style="margin-top: 20px; padding: 0px;">
 
-                        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1" data-title="option caption"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-
-                    </div>
-                    <div class="col-md-3">
-                        <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-                    </div>
-
-
-
+                                <a class="example-image-link" href="upload/tour-package/date/gallery/<?php echo $photo_album['image_name'] ?>" data-lightbox="example-1" data-title="option caption"><img class="example-image" src="upload/tour-package/date/gallery/thumb/<?php echo $photo_album['image_name'] ?>" alt="image-1" /></a>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
                 </div>
-               
-                <div class="row" >
-                    <div class="col-md-12"style="padding-top: 20px;">
-                        <div class="blog-content">
-                            <h3 class="entry-title">>.Day 1- Well Trained Drivers On Duty</h3>
-                            <div class="entry-content">
-                                <p>Come and listen to a story about a man named Jed a poor mountaineer barely kept his family fed so lets make the most of this beautiful day since we're together It is a beautiful day in this neighborhood a beautiful day for a neighbor would you be mine. Could you be mine Its a neighborly day in this beautywood a neighborly day for a beauty. Would you be mine. Its a neighborly day in this beautywood a neighborly day for a beauty.</p>
-                                <p>The Brady Bunch the Brady Bunch that's the way we all became the Brady Bunch. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some. Movin' on up to the east side. We finally got a piece of the pie. If you have a problem if no one else can help and if you can find them maybe you can hire The A-Team.</p>
-
-                                <p>Could you be mine Its a neighborly day in this beautywood a neighborly day for a beauty. Would you be mine. Its a neighborly day in this beautywood a neighborly day for a beauty the Brady Bunch the Brady Bunch.</p>
+                <div class="container">	
+                    <div style="padding-top: 20px;"   >
+                        <div class="col-md-12" style="padding: 0px">
+                            <div class="blog-content">
+                                <h3 class="entry-title"><?php echo $tour_date['title'] ?></h3>
+                                <div class="entry-content">
+                                    <p><?php echo $tour_date['description'] ?></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div><!-- Container/- -->
+
+                <?php }
+                ?>
+            </div>
             <div class="section-padding"></div>				
         </div>
 
