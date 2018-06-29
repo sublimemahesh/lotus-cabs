@@ -36,10 +36,7 @@ if (isset($_POST['create'])) {
     $SERVICE->image_name = $imgName;
 
     $VALID->check($SERVICE, [
-        'title' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE],
+       
     ]);
 
 
@@ -106,10 +103,7 @@ if (isset($_POST['update'])) {
     $VALID = new Validator();
 
     $VALID->check($SERVICE, [
-        'title' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
-        'image_name' => ['required' => TRUE],
+        
     ]);
 
 
