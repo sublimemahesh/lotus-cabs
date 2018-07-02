@@ -69,7 +69,7 @@ $SLIDER = new Slider($id);
                                     </div>
 
 
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 hidden">
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="url" class="form-control" value="<?php echo $SLIDER->url; ?>"  name="url">
@@ -77,7 +77,7 @@ $SLIDER = new Slider($id);
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
                                         <label for="description">Description</label>
                                         <div class="form-line">
                                             <textarea id="description" name="description" class="form-control" rows="5"><?php echo $SLIDER->description; ?></textarea> 

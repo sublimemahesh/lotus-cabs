@@ -4,11 +4,11 @@
         <!-- Container -->
         <div class="container">
             <ul class="col-md-4 social no-bottom-margin pull-left">
-                <li><a href="#"><img src="images/icon/fb-ic.png" alt="Facebook" /></a></li>	
-                <li><a href="#"><img src="images/icon/g%2b-ic.png" alt="Google pulse" /></a></li>
-                <li><a href="#"><img src="images/icon/tumbler-ic.png" alt="Tumbler" /></a></li>
-                <li><a href="#"><img src="images/icon/dribbble-ic.png" alt="dribbler" /></a></li>
-                <li><a href="#"><img src="images/icon/tw-ic.png" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="images/icon/fb-ic.png" alt="Facebook" class="social-i"/></a></li>	
+                <li><a href="#"><img src="images/icon/g%2b-ic.png" alt="Google pulse" class="social-i" /></a></li>
+                <li><a href="#"><img src="images/icon/tumbler-ic.png" alt="Tumbler" class="social-i"/></a></li>
+                <li><a href="#"><img src="images/icon/dribbble-ic.png" alt="dribbler" class="social-i"/></a></li>
+                <li><a href="#"><img src="images/icon/tw-ic.png" alt="Twitter" class="social-i"/></a></li>
             </ul>
             <div class="col-md-2 pull-right top-menu">
                 <div class="no-bottom-margin" style="float:right">
