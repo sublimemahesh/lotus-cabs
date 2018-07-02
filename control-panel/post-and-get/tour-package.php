@@ -7,10 +7,10 @@ if (isset($_POST['create'])) {
     $TOUR_PACKAGE = new TourPackage(NULL);
     $VALID = new Validator();
 
-    $TOUR_PACKAGE->title = mysql_real_escape_string($_POST['title']);
-    $TOUR_PACKAGE->price = mysql_real_escape_string($_POST['price']);
-    $TOUR_PACKAGE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $TOUR_PACKAGE->description = mysql_real_escape_string($_POST['description']);
+    $TOUR_PACKAGE->title = $_POST['title'];
+    $TOUR_PACKAGE->price = $_POST['price'];
+    $TOUR_PACKAGE->short_description = $_POST['short_description'];
+    $TOUR_PACKAGE->description = $_POST['description'];
 
     $dir_dest = '../../upload/tour-package/';
 
@@ -37,10 +37,10 @@ if (isset($_POST['create'])) {
     $TOUR_PACKAGE->image_name = $imgName;
 
     $VALID->check($TOUR_PACKAGE, [
-        'title' => ['required' => TRUE],
-        'price' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
+        'title' => ['' => TRUE],
+        'price' => ['' => TRUE],
+        'short_description' => ['' => TRUE],
+        'description' => ['' => TRUE],
         'image_name' => ['required' => TRUE],
     ]);
 
@@ -101,19 +101,19 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE = new TourPackage($_POST['id']);
 
     $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
-    $TOUR_PACKAGE->title = mysql_real_escape_string($_POST['title']);
-    $TOUR_PACKAGE->price = mysql_real_escape_string($_POST['price']);
-    $TOUR_PACKAGE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $TOUR_PACKAGE->description = mysql_real_escape_string($_POST['description']);
+    $TOUR_PACKAGE->title = $_POST['title'];
+    $TOUR_PACKAGE->price = $_POST['price'];
+    $TOUR_PACKAGE->short_description = $_POST['short_description'];
+    $TOUR_PACKAGE->description = $_POST['description'];
 
 
     $VALID = new Validator();
 
     $VALID->check($TOUR_PACKAGE, [
-        'title' => ['required' => TRUE],
-        'price' => ['required' => TRUE],
-        'short_description' => ['required' => TRUE],
-        'description' => ['required' => TRUE],
+        'title' => ['' => TRUE],
+        'price' => ['' => TRUE],
+        'short_description' => ['' => TRUE],
+        'description' => ['' => TRUE],
         'image_name' => ['required' => TRUE],
     ]);
 
