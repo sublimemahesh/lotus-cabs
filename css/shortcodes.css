@@ -132,7 +132,7 @@ a.see-more:hover{
 }
 .section-header2 {
     margin-bottom: 45px;
-    margin-top: 70px;
+    margin-top: 45px;
 
 }
 .section-header3 {
@@ -1015,7 +1015,32 @@ a.see-more:hover{
     clear: right;
     margin-right: 20px;
 }
-
+.tripA-1{
+    float: right;
+    margin-top: -295px;
+    margin-right: 285px;
+}
+.tripA-2{
+    float: right;
+    margin-top: -258px;
+    margin-right: 102px;
+}
+.about-t{
+    margin-top: -200px;
+    position: static;
+    padding: 0;
+    opacity: 0.4;
+    width: 40%
+}
+.b-color{
+    color: black;
+}
+.c-top{
+   margin-top: 80px;
+}
+.r-top{
+  padding-top: 30px;
+}
 /* -- Blog */
 .blog {
     text-align: center;
@@ -2133,7 +2158,7 @@ a.learn-more{
     display: inline-block;
     border-bottom: 1px solid #ddd;
     width: 100%;
-   
+
 }
 .recent-post-box2 h3 {
     margin: 0;
