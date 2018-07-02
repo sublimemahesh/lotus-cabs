@@ -113,8 +113,8 @@ include_once ('class/include.php');
                                     <img src="upload/service/<?php echo $services['image_name'] ?>" alt=""/>
                                 </div>
                                 <div class="choose-us-content-box">
-                                    <h3><?php echo $services['title']?></h3>
-                                    <p class="text-justify"><?php echo substr($services['short_description'],0,110);?>...</p>
+                                    <h3><?php echo $services['title'] ?></h3>
+                                    <p class="text-justify"><?php echo substr($services['short_description'], 0, 110); ?>...</p>
                                     <a href="#">Read More</a>
                                 </div>
                             </div>
@@ -134,119 +134,30 @@ include_once ('class/include.php');
             <div class="section-padding1"></div>
             <div class="container">			
                 <div class="section-header we-do-more2">
-                    <h2>News</h2>				
+                    <h2>Tour Packages</h2>				
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <article class="blog-post-list">
-                            <div class="entry-cover">
-                                <a href="#">
-                                    <img src="photos/s1.jpg" alt=""/>
-                                </a>
-                                <div class="post-meta">
-                                    <img src="images/icon/photo.png" alt="photo"/>
+                    <div class="choose-carousel">
+                         <?php foreach (TourPackage::all() as $tour_package) { ?>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <article class="blog-post-list">
+                                <div class="entry-cover" style="padding-bottom: 10px;">
+                                    <a href="#">
+                                        <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""/>
+                                    </a>
                                 </div>
-                                <div class="entry-meta">
-                                    <div class="meta-inner">
-                                        <div class="by-line pull-left">Posted By <a href="#">Admin</a></div>
-                                        <div class="post-comment pull-right">
-                                            <a href="#"><i class="fa fa-comment"></i>Comments<span>14</span></a>
-                                        </div>
-                                    </div>								
-                                    <div class="meta-inner">
-                                        <div class="post-date pull-left"><span>On 22 Aug 2015</span></div>
-                                        <div class="tags pull-right">
-                                            <i class="fa fa-tag"></i>
-                                            <a href="#">Cab</a>
-                                            <a href="#">Taxi</a>
-                                            <a href="#">Rent</a>
-                                            <a href="#">Hire</a>
-                                            <a href="#">Trip</a>
-                                        </div>
+                                <div class="blog-content">
+                                    <h3 class="entry-title"><?php echo $tour_package['title'] ?></h3>
+                                    <div class="entry-content">
+                                        <p class="text-justify"><?php echo substr($tour_package['short_description'], 0, 120) ?>...</p>
+                                        <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" title="Read More" class="pull-right">Read More</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="blog-content">
-                                <h3 class="entry-title">Well Trained Drivers On Duty</h3>
-                                <div class="entry-content">
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="#" title="Read More" class="pull-right">Read More</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <article class="blog-post-list">
-                            <div class="entry-cover">
-                                <a href="#">
-                                    <img src="photos/s2.jpg" alt=""/>
-                                </a>
-                                <div class="post-meta">
-                                    <img src="images/icon/video.png" alt="video"/>
-                                </div>
-                                <div class="entry-meta">
-                                    <div class="meta-inner">
-                                        <div class="by-line pull-left">Posted By <a href="#">Admin</a></div>
-                                        <div class="post-comment pull-right">
-                                            <a href="#"><i class="fa fa-comment"></i>Comments<span>22</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="meta-inner">
-                                        <div class="post-date pull-left"><span>On 14 Sep 2015</span></div>
-                                        <div class="tags pull-right">
-                                            <i class="fa fa-tag"></i>
-                                            <a href="#">Pickup</a>
-                                            <a href="#">Airport</a>
-                                            <a href="#">paid</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <h3 class="entry-title">Got The Airport Shuttle Contract</h3>
-                                <div class="entry-content">
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="#" class="pull-right">Read More</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <article class="blog-post-list">
-                            <div class="entry-cover">
-                                <a href="#">
-                                    <img src="photos/s3.jpg" alt=""/>
-                                </a>
-                                <div class="post-meta">
-                                    <img src="images/icon/photo.png" alt="photo"/>
-                                </div>
-                                <div class="entry-meta">
-                                    <div class="meta-inner">
-                                        <div class="by-line pull-left">Posted By <a href="#">Admin</a></div>
-                                        <div class="post-comment pull-right">
-                                            <a href="#"><i class="fa fa-comment"></i>Comments<span>16</span></a>
-                                        </div>
-                                    </div>								
-                                    <div class="meta-inner">
-                                        <div class="post-date pull-left"><span>On 30 Oct 2015</span></div>
-                                        <div class="tags pull-right">
-                                            <i class="fa fa-tag"></i>
-                                            <a href="#">City</a>
-                                            <a href="#">Service</a>
-                                            <a href="#">Taxi</a>
-                                            <a href="#">Cab</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <h3 class="entry-title">Why Should Companies Offer Taxi</h3>
-                                <div class="entry-content">
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <a href="#" class="pull-right">Read More</a>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
+                        <?php
+                        
+                         }?>
                     </div>
                 </div>
             </div>
