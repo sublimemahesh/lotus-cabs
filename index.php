@@ -78,16 +78,32 @@ include_once ('class/include.php');
         <!-- What We Do -->
         <div class="container-fluid no-padding what-we-do">
             <div class="section-padding"></div>
+            <?php
+            $PAGES = new Page(2);
+            ?>
+
             <div class="image-box" style="padding-top: 40px;">
+
                 <img src="photos/10.jpg" alt=""/>
+                <div class="tripA-1">
+                    <div id="TA_certificateOfExcellence621" class="TA_certificateOfExcellence"><ul id="qyQv3aWm8V" class="TA_links HmKeAzK1"><li id="nbDUE79E3t4l" class="uCERbUGeDj"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=621&amp;locationId=12150412&amp;lang=en_US&amp;year=2018&amp;display_version=2"></script>
+
+                    </div>
+                <div class="tripA-2">
+                        <div id="TA_cdsratingsonlynarrow189" class="TA_cdsratingsonlynarrow"><ul id="CAJrtQT" class="TA_links 82H7LK5UvBta"><li id="DrYuIUMPP4ma" class="hCfZk2mM"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=189&amp;locationId=12150412&amp;lang=en_US&amp;border=true&amp;display_version=2"></script>
+                  
+                </div>
+
             </div>
+
             <!-- Container -->
             <div class="container" >			
                 <div class="col-md-8 pull-right">
                     <div class="we-do-more ">
                         <h3>Welcome to </h3>
                         <h2>lotus cabs - Sri Lanka</h2>
-                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+
+                        <p class="text-justify"><?php echo $PAGES->description ?></p>
                     </div>
 
                 </div>
@@ -115,7 +131,7 @@ include_once ('class/include.php');
                                 <div class="choose-us-content-box">
                                     <h3><?php echo $services['title'] ?></h3>
                                     <p class="text-justify"><?php echo substr($services['short_description'], 0, 110); ?>...</p>
-                                    <a href="service-view.php?id=<?php echo $services['id']?>">Read More</a>
+                                    <a href="service-view.php?id=<?php echo $services['id'] ?>">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -138,26 +154,25 @@ include_once ('class/include.php');
                 </div>
                 <div class="row">
                     <div class="choose-carousel">
-                         <?php foreach (TourPackage::all() as $tour_package) { ?>
-                        <div class="col-md-12 col-sm-6 col-xs-12">
-                            <article class="blog-post-list">
-                                <div class="entry-cover" style="padding-bottom: 10px;">
-                                    <a href="#">
-                                        <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <h3 class="entry-title"><?php echo $tour_package['title'] ?></h3>
-                                    <div class="entry-content">
-                                        <p class="text-justify"><?php echo substr($tour_package['short_description'], 0, 120) ?>...</p>
-                                        <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" title="Read More" class="pull-right">Read More</a>
+                        <?php foreach (TourPackage::all() as $tour_package) { ?>
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <article class="blog-post-list">
+                                    <div class="entry-cover" style="padding-bottom: 10px;">
+                                        <a href="#">
+                                            <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""/>
+                                        </a>
                                     </div>
-                                </div>
-                            </article>
-                        </div>
-                        <?php
-                        
-                         }?>
+                                    <div class="blog-content">
+                                        <h3 class="entry-title"><?php echo $tour_package['title'] ?></h3>
+                                        <div class="entry-content">
+                                            <p class="text-justify"><?php echo substr($tour_package['short_description'], 0, 120) ?>...</p>
+                                            <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" title="Read More" class="pull-right">Read More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        <?php }
+                        ?>
                     </div>
                 </div>
             </div>

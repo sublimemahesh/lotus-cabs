@@ -107,19 +107,19 @@ $SERVICES = new Service($id);
                                         <?php
                                         $li = '';
                                         foreach (ServicePhoto::getServicePhotosById($id)as $key => $services_photos) {
-                                        if ($key === 0) {
-                                        ?>
-                                        <div class="item active">
-                                            <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
-                                        </div>
-                                        <?php
-                                        } else {
-                                        ?>
-                                        <div class="item">
-                                            <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
-                                        </div>
-                                        <?php
-                                        }
+                                            if ($key === 0) {
+                                                ?>
+                                                <div class="item active">
+                                                    <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
+                                                </div>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <div class="item">
+                                                    <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
+                                                </div>
+                                                <?php
+                                            }
                                         }
                                         ?>
 
@@ -156,21 +156,22 @@ $SERVICES = new Service($id);
                             <div class="widget-title2">
                                 <h3>Other Services</h3>
                             </div>
-                            <?php foreach (Service::all() as $key => $other_services){ 
-                                if($key<2);
-                                
-                                ?>
-                            
-                            <div class="recent-post-box2">
-                                <div class="recent-title2 col-md-8 col-sm-10 col-xs-8 no-padding">
-                                    <a href="service-view.php?id=<?php echo $other_services['id']?>"><?php echo $other_services['title']?></a>
-                                    <p class="text-justify"><?php echo substr($other_services['short_description'],0,80)?>...</p>
-                                </div>
-                                <div class="recent-img2 col-md-4 col-sm-2 col-xs-4 no-padding">
-                                    <a href="service-view.php?id=<?php echo $other_services['id']?>"><img src="upload/service/<?php echo $other_services['image_name']?>" alt="recent-1"/></a>
-                                </div>
-                            </div>
                             <?php
+                            foreach (Service::all() as $key => $other_services) {
+                                if ($key < 5) {
+                                    ?>
+
+                                    <div class="recent-post-box2">
+                                        <div class="recent-title2 col-md-8 col-sm-10 col-xs-8 no-padding">
+                                            <a href="service-view.php?id=<?php echo $other_services['id'] ?>"><?php echo $other_services['title'] ?></a>
+                                            <p class="text-justify"><?php echo substr($other_services['short_description'], 0, 80) ?>...</p>
+                                        </div>
+                                        <div class="recent-img2 col-md-4 col-sm-2 col-xs-4 no-padding">
+                                            <a href="service-view.php?id=<?php echo $other_services['id'] ?>"><img src="upload/service/<?php echo $other_services['image_name'] ?>" alt="recent-1"/></a>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
                             }
                             ?>
                         </aside><!-- Recent Post/- -->

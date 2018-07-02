@@ -89,7 +89,7 @@ include_once ('class/include.php');
                     <h2>Our Services</h2>				
                 </div>
                 <?php foreach (Service::all() as $key => $services) { ?>
-                    <div class="col-md-4" >
+                <div class="col-md-4" style="padding-bottom: 15px;">
                         <div class="choose-us-box1">
                             <div class="choose-img-box2">
                                 <img src="upload/service/<?php echo $services['image_name'] ?>" alt=""/>
