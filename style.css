@@ -200,7 +200,7 @@ ul {
 /* - Top Header */
 .top-header {
     background-color: #f5f5f5;
-    padding-bottom: 5px;
+   
     padding-top: 5px;
 }
 /* -- Social */
@@ -319,7 +319,7 @@ ul {
     display: block;
 }
 .phone {
-    margin-left: 32px;
+    margin-left: 26px;
 }
 .phone > img { 
     top: 7px;

@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+include_once ('class/include.php');
+$id = '';
+$id = $_GET['id'];
+$SERVICES = new Service($id);
+?>
 <head>
     <meta charset="utf-8">
 
@@ -72,72 +78,71 @@
             <!-- Page Banner -->
             <div id="page-banner" class="page-banner blog-banner container-fluid no-padding">
                 <div class="page-heading">
-                    <h3>Blog Posts</h3>
+                    <h3>Services in <?php echo $SERVICES->title ?></h3>
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li class="active"><a href="#">Blog Post</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="service.php">services</a></li>
+                        <li class="active"><a href="#">service view</a></li>
                     </ol>
                 </div>
             </div><!-- Page Banner/- -->
 
             <!-- Page Content -->
             <div class="container-fluid no-padding page-content">	
-                <div class="section-padding"></div>
                 <!-- Container -->
                 <div class="container">		
                     <!-- Blog Area -->
                     <div class="col-md-9 blog-area">				
                         <div class="section-header">
-                            <h3>Recent Updates From Our Blog</h3>
+
                         </div>
                         <article class="blog-post-list2">					
                             <div class="entry-cover">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    </ol>
+
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
+                                        <?php
+                                        $li = '';
+                                        foreach (ServicePhoto::getServicePhotosById($id)as $key => $services_photos) {
+                                        if ($key === 0) {
+                                        ?>
                                         <div class="item active">
-                                            <img src="images/tour/130509024.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                ...
-                                            </div>
+                                            <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
                                         </div>
+                                        <?php
+                                        } else {
+                                        ?>
                                         <div class="item">
-                                           
-                                            <img src="images/tour/130509027.jpg" alt=""/>
-                                            <div class="carousel-caption">
-                                                ...
-                                            </div>
+                                            <img src="upload/service/gallery/<?php echo $services_photos['image_name']; ?>" alt=""/>
                                         </div>
-                                     
+                                        <?php
+                                        }
+                                        }
+                                        ?>
 
-                                    <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
 
 
-                            </div>				
+                                </div>				
                                 <div class="blog-content" style="margin-top: 15px;">
-                                <h3 class="entry-title">Well Trained Drivers On Duty</h3>
-                                <div class="entry-content">
-                                    <p>Come and listen to a story about a man named Jed a poor mountaineer barely kept his family fed so lets make the most of this beautiful day since we're together It is a beautiful day in this neighborhood a beautiful day for a neighbor would you be mine. Could you be mine? Its a neighborly day in this beautywood a neighborly day for a beauty. Would you be mine.</p>
-                                    <a href="#" title="Read More" class="pull-right">Read More</a>
+                                    <h3 class="entry-title"><?php echo $SERVICES->title ?></h3>
+                                    <div class="entry-content">
+                                        <p class="text-justify"><?php echo $SERVICES->description ?></p>
+
+                                    </div>
                                 </div>
-                            </div>
                         </article>
 
                         <!-- Pagination -->
@@ -146,38 +151,28 @@
 
                     <!-- Widget Area -->
                     <div class="col-md-3 widget-area">
-
+                        <div style="padding-top: 65px;"></div>
                         <aside class="widget recent-post">
                             <div class="widget-title2">
-                                <h3>Recent Post</h3>
+                                <h3>Other Services</h3>
                             </div>
-                            <div class="recent-post-box">
-                                <div class="recent-title col-md-8 col-sm-10 col-xs-8 no-padding">
-                                    <a href="#">poor mountaineer barely kept his family</a>
-                                    <p>July 07, 2015</p>
+                            <?php foreach (Service::all() as $key => $other_services){ 
+                                if($key<2);
+                                
+                                ?>
+                            
+                            <div class="recent-post-box2">
+                                <div class="recent-title2 col-md-8 col-sm-10 col-xs-8 no-padding">
+                                    <a href="service-view.php?id=<?php echo $other_services['id']?>"><?php echo $other_services['title']?></a>
+                                    <p class="text-justify"><?php echo substr($other_services['short_description'],0,80)?>...</p>
                                 </div>
-                                <div class="recent-img col-md-4 col-sm-2 col-xs-4 no-padding">
-                                    <a href="#"><img src="images/widget/recent/recent-1.jpg" alt="recent-1"/></a>
-                                </div>
-                            </div>
-                            <div class="recent-post-box">
-                                <div class="recent-title col-md-8 col-sm-10 col-xs-8 no-padding">
-                                    <a href="#">card attached would say thank you for being</a>
-                                    <p>July 07, 2015</p>
-                                </div>
-                                <div class="recent-img col-md-4 col-sm-2 col-xs-4 no-padding">
-                                    <a href="#"><img src="images/widget/recent/recent-2.jpg" alt="recent-2"/></a>
+                                <div class="recent-img2 col-md-4 col-sm-2 col-xs-4 no-padding">
+                                    <a href="service-view.php?id=<?php echo $other_services['id']?>"><img src="upload/service/<?php echo $other_services['image_name']?>" alt="recent-1"/></a>
                                 </div>
                             </div>
-                            <div class="recent-post-box">
-                                <div class="recent-title col-md-8 col-sm-10 col-xs-8 no-padding">
-                                    <a href="#">tell me how to get how to get to Sesame Street</a>
-                                    <p>July 07, 2015</p>
-                                </div>
-                                <div class="recent-img col-md-4 col-sm-2 col-xs-4 no-padding">
-                                    <a href="#"><img src="images/widget/recent/recent-3.jpg" alt="recent-3"/></a>
-                                </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                         </aside><!-- Recent Post/- -->
                     </div><!-- Widget Area/- -->
                 </div><!-- Container/- -->

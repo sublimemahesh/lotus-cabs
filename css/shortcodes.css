@@ -2120,6 +2120,36 @@ a.learn-more{
     display: inline-block;
     margin-bottom: 19px;
 }
+.recent-post-box2 {
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+   
+}
+.recent-post-box2 h3 {
+    margin: 0;
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
+}
+.recent-title2 a{
+    color: #222;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.recent-title2 p {
+    color: #0fa0ce;
+    font-size: 12px;
+    font-weight: 600;
+}
+.recent-img2 img {
+    float: right;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 75%;
+}
 
 /* - Widget Tags */
 .widget-tags a{
