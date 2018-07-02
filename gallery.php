@@ -92,7 +92,7 @@
                     ?>
                     <div class="col-md-3">
                         <div class="gallery">
-                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 31px; padding-top: 40px;"/></a>
+                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 15px; padding-top: 20px;"/></a>
                             <div class="clear"></div>
                         </div>
                     </div>

@@ -1140,7 +1140,16 @@ a.see-more:hover{
     padding: 30px 20px;
     text-align: left;
     margin-top: -1px;
+    margin-right: 41px;
 }
+.blog-content3 {
+    border: 1px solid #d1d1d1;
+    padding: 30px 20px;
+    text-align: left;
+    margin-top: -1px;
+    
+}
+
 
 .blog-content2 {
 
