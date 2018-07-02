@@ -97,7 +97,7 @@ include_once ('class/include.php');
                             <div class="choose-us-content-box1">
                                 <h3><?php echo $services['title'] ?></h3>
                                 <p class="text-justify"><?php echo substr($services['short_description'], 0, 110); ?>...</p>
-                                <a href="#">Read More</a>
+                                <a href="service-view.php?id=<?php echo $services['id']?>">Read More</a>
                             </div>
                         </div>
                     </div>
