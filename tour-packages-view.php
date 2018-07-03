@@ -122,7 +122,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
                 <div class="container">	
                     <div style="padding-top: 20px;"   >
                         <div class="col-md-12" style="padding: 0px">
-                            <div class="blog-content">
+                            <div id="blog-content3">
                                 <h3 class="entry-title"><?php echo $tour_date['title'] ?></h3>
                                 <div class="entry-content">
                                     <p><?php echo $tour_date['description'] ?></p>
