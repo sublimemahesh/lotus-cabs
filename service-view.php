@@ -82,7 +82,7 @@ $SERVICES = new Service($id);
                     <ol class="breadcrumb">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="service.php">services</a></li>
-                        <li class="active"><a href="#">service view</a></li>
+                        <li class="active"><a href="service-view.php">service view</a></li>
                     </ol>
                 </div>
             </div><!-- Page Banner/- -->
@@ -93,15 +93,11 @@ $SERVICES = new Service($id);
                 <div class="container">		
                     <!-- Blog Area -->
                     <div class="col-md-9 blog-area">				
-                        <div class="section-header">
-
-                        </div>
+                       
                         <article class="blog-post-list2">					
                             <div class="entry-cover">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
-
-
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <?php

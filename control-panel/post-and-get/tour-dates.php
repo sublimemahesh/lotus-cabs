@@ -58,7 +58,7 @@ if (isset($_POST['create'])) {
 
     $VALID->check($TOUR_DATE, [
         'title' => ['' => TRUE],
-        'image_name' => ['required' => TRUE],
+        'image_name' => ['' => TRUE],
         'description' => ['' => TRUE]
     ]);
 
@@ -137,7 +137,7 @@ if (isset($_POST['update'])) {
     $VALID = new Validator();
     $VALID->check($TOUR_DATE, [
         'title' => ['' => TRUE],
-        'image_name' => ['required' => TRUE],
+        'image_name' => ['' => TRUE],
         'description' => ['' => TRUE],
     ]);
 

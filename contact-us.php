@@ -76,8 +76,8 @@
                 <div class="page-heading">
                     <h3>Contact Us</h3>
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active"><a href="#">Contact</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li class="active"><a href="contact-us.php">Contact</a></li>
                     </ol>
                 </div>
             </div><!-- Banner Section /- -->
@@ -93,7 +93,7 @@
                         <div class="col-md-4">
                             <!-- Section Header -->
                             <div class="section-header">
-                                <h3>business Enquiry</h3>
+                                <h3>Lotus-cabs</h3>
                             </div><!-- Section Header -->
                             <p>That this group would somehow form a family that is the way we all became the brady bunch baby.</p>
                             <p>Got kind of tired packin' and unpackin' - town to town and up and down the dial. Movin' on up to the east side. We finally got a piece of the pie.</p>
@@ -101,19 +101,19 @@
                         <div class="col-md-8 col-sm-12">
                             <form class="row" id="contact-form" method="post">
                                 <div class="col-md-6 col-sm-6 form-group">
-                                    <input type="text" placeholder="Your name here" id="txtFullName" name="txtFullNames" class="form-control">
+                                    <input type="text" placeholder="Your name here:" id="txtFullName" name="txtFullNames" class="form-control">
                                     <span id="spanFullName"></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 form-group">
-                                    <input type="email" class="form-control" id="txtEmail" name="contact-email" placeholder="E-mail Address" required>
+                                    <input type="email" class="form-control" id="txtEmail" name="contact-email" placeholder="E-mail Address:" required>
                                     <span id="spanEmail"></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 form-group">
-                                    <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone" required>
+                                    <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone:" required>
                                     <span id="spanPhone"></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 form-group">
-                                    <input type="text" class="form-control" id="txtSubject" name="contact-subject" placeholder="Subject" required>
+                                    <input type="text" class="form-control" id="txtSubject" name="contact-subject" placeholder="Subject:" required>
                                     <span id="spanSubject"></span>
                                 </div>
                                 <div class="col-md-12 col-sm-12 form-group">
@@ -124,7 +124,7 @@
                                     <div class="col-xs-12 col-sm-6 col-md-8">
                                         <div class="col-sm-6 ">
                                             <label for="comment">Security Code:</label>
-                                            <input style="margin-left: 0px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code ">
+                                            <input style="margin-left: 0px;" type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code:">
                                             <span id="capspan" ></span>
                                         </div>
                                         <div style="margin-top: 12px;" class="col-sm-6 col-md-6">
@@ -147,7 +147,7 @@
         <!-- contact map /- -->
         <div class="contact-top-right">
             <div class="innerpage-section">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.716723132564!2d80.21369891476817!3d6.033559295630301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb5c8067f1%3A0x4768397502edf93!2sSublime+Holdings!5e0!3m2!1sen!2slk!4v1530252356928" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>               
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.4983272423606!2d80.21976691476834!3d6.063323895609089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173d7e8abaa01%3A0x35120442aff2bf76!2sLOTUS+CABS!5e0!3m2!1sen!2slk!4v1530547498089" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div><!-- contact map /- -->
 
