@@ -98,7 +98,7 @@ include_once ('class/include.php');
                                             <img src="upload/tour-package/<?php echo $tour_package['image_name'];?>" alt=""/>
                                         </a>
                                     </div>
-                                    <div class="blog-content3">
+                                    <div class="blog-content">
                                         <h3 class="entry-title"><?php echo $tour_package['title']?></h3>
                                         <div class="entry-content">
                                             <p class="text-justify"><?php echo substr($tour_package['short_description'],0,120)?>...</p>

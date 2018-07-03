@@ -1,0 +1,10 @@
+<script>
+        /*jslint browser:true*/
+        /*global jQuery, document*/
+
+        jQuery(document).ready(function () {
+            'use strict';
+
+            jQuery('#filter-date, #search-from-date, #search-to-date').datetimepicker();
+        });
+    </script>

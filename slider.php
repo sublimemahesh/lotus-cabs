@@ -13,9 +13,8 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-                                    <p><?php echo substr($slider_image['title'],0,100) ?>..</p>							
-                                    <a href="#" title="Learn More" class="learn-more">Learn More</a>		
-                                    <a href="#" title="Purchase" class="purchase">Purchase</a>
+                                    <p><?php echo substr($slider_image['title'], 0, 100) ?>..</p>							
+
                                 </div>
                             </div>
                         </div>
@@ -28,9 +27,8 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-                                    <p><?php echo substr($slider_image['title'],0,70)?>...</p>							
-                                    <a href="#" title="Learn More" class="learn-more">Learn More</a>		
-                                    <a href="#" title="Purchase" class="purchase">Purchase</a>
+
+
                                 </div>
                             </div>
                         </div>
@@ -45,46 +43,56 @@
         </div>
     </div>
     <!-- Booking Form -->
+
     <div class="booking-form">
         <div class="container">
             <div class="col-md-4">
-                <form name="book-taxi" class="book-taxi-form">
-                    <h3>Book Your Taxi Now</h3>	
+                <div id="contact-form" method="post" class="book-taxi-form">
+                    <h3>Book Your Taxi Now</h3>   
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="txt_name">Name :</label>
                         <input type="text" class="form-control" id="txt_name" placeholder="Your Name" />
+                        <span id="spanName" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
-                        <label for="txt_phone">Phone Number :</label>
-                        <input type="text" class="form-control" id="txt_phone" placeholder="Enter Phone Number" />
+                        <label for="txtEmail">Phone Number :</label>
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Enter Phone Number" />
+                        <span id="spanEmail" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="txt_startfrom">Pickup Place :</label>
                         <input type="text" class="form-control" id="txt_startfrom" placeholder="Start From" />
+                        <span id="spanPickupPlace" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="txt_drop">Drop Place :</label>
                         <input type="text" class="form-control" id="txt_drop" placeholder="Drop To" />
+                        <span id="spanDropPlace" ></span>
                     </div>
-                    <div class="form-group col-md-12">
-                        <label for="txt_drop">Date Pickup :</label>									
+                    <div class="form-group col-md-12" id="filters">
+                        <label for="txt_pickup">Date Pickup :</label>  									
                         <div id="datepicker" class="input-group">
-                            <input class="form-control" data-format="yyyy-MM-dd" type="text" placeholder="DD/MM/YYYY" />
+                            <input class="form-control"  id="txt_pickup filter-dateid search-to-date"class="form-control" type="text" name="filter-date" placeholder="YYYY/MM/DD  HH:MM" />
                             <span class="add-on">
                                 <i data-time-icon="icon-time" data-date-icon="icon-calendar"><img src="images/icon/date-picker.png" alt="datepicker" /></i>
-                            </span> 
+                            </span>
+                            <span id="spanDatePickup" ></span>                       
                         </div>
                     </div>
                     <div class="form-group col-md-12">
-                        <div id="timepicker" class="input-group time-picker">
-                            <div class="col-md-4 col-sm-4 col-xs-4"><input class="form-control" min="1" max="12" type="number" /></div>
-                            <div class="col-md-4 col-sm-4 col-xs-4"><input class="form-control" min="1" max="60" type="number" /></div>
-                            <div class="col-md-4 col-sm-4 col-xs-4"><select class="form-control"><option>AM</option><option>PM</option></select></div>
-                        </div>
+                        <label for="txt_passengers">Passengers :</label>
+                        <input type="number" class="form-control" id="txt_passengers" placeholder="Enter Passengers" />
+                        <span id="spanNumberOfPassengers" ></span>
                     </div>
-                    <div class="col-md-12"><button type="submit" title="submit" class="btn">Submit</button></div>
-                </form>
+
+                    <div class="col-md-12">
+                        <button type="submit" id="btnSubmit" title="submit" class="btn">Submit</button></div>
+                    <div id="dismessage-msg" class="alert-msg"></div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div><!-- Booking Form /- -->
+    </div>
+</div>
+<!-- Booking Form /- -->
 </div ><!-- Photo Slider/- -->
