@@ -13,7 +13,7 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-                                    <p><?php echo substr($slider_image['title'],0,70) ?>..</p>							
+                                    <p><?php echo substr($slider_image['title'],0,100) ?>..</p>							
                                     <a href="#" title="Learn More" class="learn-more">Learn More</a>		
                                     <a href="#" title="Purchase" class="purchase">Purchase</a>
                                 </div>

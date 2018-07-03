@@ -1166,18 +1166,24 @@ a.see-more:hover{
     padding: 30px 20px;
     text-align: left;
     margin-top: -1px;
-    margin-right: 41px;
 }
-.blog-content3 {
+#blog-content3 {
     border: 1px solid #d1d1d1;
     padding: 30px 20px;
     text-align: left;
     margin-top: -1px;
-    
+    margin-right: 41px;
 }
 
 
+
 .blog-content2 {
+
+    padding: 30px 5px;
+    text-align: left;
+    margin-top: -1px;
+}
+#blog-content3   {
 
     padding: 30px 5px;
     text-align: left;
@@ -1191,6 +1197,13 @@ a.see-more:hover{
     color: #222;
     margin-bottom: 8px;
 }
+#blog-content3 .entry-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+    margin-bottom: 8px;
+}
 .blog-content2 .entry-title {
     font-size: 18px;
     font-weight: 600;
@@ -1198,6 +1211,20 @@ a.see-more:hover{
     color: #222;
     margin-bottom: 8px;
     text-align: center;
+}
+#blog-content3 .entry-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+    margin-bottom: 8px;
+    text-align: left;
+    
+}
+.entry-content p {
+    font-size: 13px;
+    color: #777;
+    line-height: 25px;
 }
 .entry-content p {
     font-size: 13px;

@@ -88,10 +88,10 @@ include_once ('class/include.php');
                 <div class="tripA-1">
                     <div id="TA_certificateOfExcellence621" class="TA_certificateOfExcellence"><ul id="qyQv3aWm8V" class="TA_links HmKeAzK1"><li id="nbDUE79E3t4l" class="uCERbUGeDj"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=621&amp;locationId=12150412&amp;lang=en_US&amp;year=2018&amp;display_version=2"></script>
 
-                    </div>
+                </div>
                 <div class="tripA-2">
-                        <div id="TA_cdsratingsonlynarrow189" class="TA_cdsratingsonlynarrow"><ul id="CAJrtQT" class="TA_links 82H7LK5UvBta"><li id="DrYuIUMPP4ma" class="hCfZk2mM"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=189&amp;locationId=12150412&amp;lang=en_US&amp;border=true&amp;display_version=2"></script>
-                  
+                    <div id="TA_cdsratingsonlynarrow189" class="TA_cdsratingsonlynarrow"><ul id="CAJrtQT" class="TA_links 82H7LK5UvBta"><li id="DrYuIUMPP4ma" class="hCfZk2mM"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=189&amp;locationId=12150412&amp;lang=en_US&amp;border=true&amp;display_version=2"></script>
+
                 </div>
 
             </div>
@@ -191,21 +191,30 @@ include_once ('class/include.php');
                 <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <p><i class="fa fa-quote-left"></i>Now the world do not move to the beat of just one drum what might be right for you may not be right for some makin their way the only way they know how that's just a little bit more than the law will allow wouldn't you like<i class="fa fa-quote-right"></i></p>
-                            <span style="padding-bottom: 15px;">Thomas Knoll</span>
-                            <div class="text-center">
-                                <img src="images/services/Kathrin.png" alt="" width="10%" />
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <p><i class="fa fa-quote-left"></i>Now the world do not move to the beat of just one drum what might be right for you may not be right for some makin their way the only way they know how that's just a little bit more than the law will allow wouldn't you like<i class="fa fa-quote-right"></i></p>
-                            <span style="padding-bottom: 15px;">Thomas Knoll</span>
-                            <div class="text-center">
-                                <img src="images/services/Kathrin.png" alt="" width="10%" />
-                            </div>
-                        </div>
+                        <?php
+                        foreach (Comments::all() as $key => $comment) {
+                            if ($key === 0) {
+                                ?>
+                                <div class="item active">
+                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment'];?><i class="fa fa-quote-right"></i></p>
+                                    <span style="padding-bottom: 15px;"><?php echo $comment['name'];?></span>
+                                    <div class="text-center">
+                                        <img src="upload/comments/<?php echo $comment['image_name'];?>" alt="" width="10%" class="img-circle"/>
+                                    </div>
+                                </div>
+                            <?php } else {
+                                ?>
+                                <div class="item">
+                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment'];?><i class="fa fa-quote-right"></i></p>
+                                    <span style="padding-bottom: 15px;"><?php echo $comment['name'];?></span>
+                                    <div class="text-center">
+                                        <img src="upload/comments/<?php echo $comment['image_name'];?>" alt="" width="10%" class="img-circle"/>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
