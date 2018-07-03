@@ -1,5 +1,3 @@
-    
-
 <div class="container-fluid photos-slider2 no-padding">
     <div id="photos-slider2" class="carousel slide" data-ride="carousel">			
         <div class="carousel-inner" role="listbox">
@@ -7,7 +5,6 @@
             foreach (Slider::all() as $key => $slider_image) {
                 if ($key === 0) {
                     ?>
-
                     <div class="item active">
                         <img src="upload/slider/<?php echo $slider_image['image_name'] ?>" alt=""/>
                         <div class="container photos-slider2-content">						
@@ -27,8 +24,6 @@
                         <div class="container photos-slider2-content">						
                             <div class="col-md-8 col-sm-12 col-xs12 pull-right">
                                 <div class="slider-content">
-
-
                                 </div>
                             </div>
                         </div>
@@ -43,12 +38,11 @@
         </div>
     </div>
     <!-- Booking Form -->
-
     <div class="booking-form">
         <div class="container">
             <div class="col-md-4">
                 <div id="contact-form" method="post" class="book-taxi-form">
-                    <h3>Book Your Taxi Now</h3>   
+                    <h3>Book Your Taxi Now</h3>
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="txt_name">Name :</label>
                         <input type="text" class="form-control" id="txt_name" placeholder="Your Name" />
@@ -84,15 +78,14 @@
                         <input type="number" class="form-control" id="txt_passengers" placeholder="Enter Passengers" />
                         <span id="spanNumberOfPassengers" ></span>
                     </div>
-
                     <div class="col-md-12">
                         <button type="submit" id="btnSubmit" title="submit" class="btn">Submit</button></div>
                     <div id="dismessage-msg" class="alert-msg"></div>
-                    </form>
-                </div>
+               </form>
+           </div>
             </div>
-        </div>
+       </div>
     </div>
 </div>
-<!-- Booking Form /- -->
-</div ><!-- Photo Slider/- -->
+</div>
+

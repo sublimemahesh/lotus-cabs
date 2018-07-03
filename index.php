@@ -208,7 +208,11 @@ include_once ('class/include.php');
                             if ($key === 0) {
                                 ?>
                                 <div class="item active">
+
                                     <p><i class="fa fa-quote-left pull-left "></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
+
+                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment']; ?><i class="fa fa-quote-right"></i></p>
+
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
                                         <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
@@ -217,6 +221,7 @@ include_once ('class/include.php');
                             <?php } else {
                                 ?>
                                 <div class="item">
+
                                     <p><i class="fa fa-quote-left pull-left " ></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
@@ -234,12 +239,44 @@ include_once ('class/include.php');
             <img src="images/border-pattern.jpg" alt="border"/>
         </div><!-- Testimonial/- -->
 
+        
+            <div class="container-fluid" >
+                <div class="row" style="background-color: black; margin-bottom: 50px;">
+                    <div style="text-align: -moz-center; color: white; padding-bottom: 40px;"><h1>How It Works</h1></div>
+                <div class="col-md-4 col-sm-6">
+                    <div style="color: #FF0;">
+                        <h4>1. Submit Ride Details</h4>
+                   </div>
+                   <ul style="color: #fff;">
+                       Fill- up online ride detail form and submit.
+                   </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div style="color: #FF0;">
+                        <h4>2. Get the quote</h4>
+                    </div>
+                    <ul style="color: #fff;">
+                        We will send you the best rate availble.
+                    </ul>
+                </div>			
+                <div class="col-md-4 col-sm-6">
+                    <div style="color: #FF0;">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4> 
+                    </div>
+                    <ul style="color: #fff;">
+                 You can confirm the offered deal online and you will receive the driver details. 
+                    </ul>
+                </div>
+            </div> 
+            </div>
+          </div><!-- Main Container -->
+
+
         <!--Footer -->
         <?php include './footer.php'; ?>
         <!--Footer End-->
 
 
-    </div><!-- Main Container -->
     <!-- JQuery v1.11.3 -->
     <script src="js/jquery.min.js"></script>
 
@@ -282,6 +319,5 @@ include_once ('class/include.php');
             jQuery('#filter-date, #search-from-date, #search-to-date').datetimepicker();
         });
     </script>
-
 </body>
 </html>
