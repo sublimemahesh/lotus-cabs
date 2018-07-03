@@ -77,8 +77,8 @@ include_once ('class/include.php');
             <div class="page-heading">
                 <h3>About Us</h3>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">About Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="about-us.php">About Us</a></li>
                 </ol>
             </div>
         </div><!-- Banner Section /- -->
@@ -87,7 +87,6 @@ include_once ('class/include.php');
         <div class="container no-padding what-we-do ">
             <!-- Container -->
             <div class="row r-top" >
-                <div class="section-header"><h3>About Us.</h3></div>
                 <div class="col-md-4">
                     <div class="text-center">
                         <img src="images/about-us/eye.png" alt=""/>

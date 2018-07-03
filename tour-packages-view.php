@@ -84,8 +84,8 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
             <div class="page-heading">
                 <h3>Tour Package</h3>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Tour Package</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="tour-packages-view.php">Tour Package</a></li>
                 </ol>
             </div>
         </div><!-- Banner Section /- -->

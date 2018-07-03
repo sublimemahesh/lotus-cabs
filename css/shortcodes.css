@@ -1047,6 +1047,7 @@ a.see-more:hover{
 }
 .blog-post-list {
     position: relative;
+    margin-bottom: 20px;
 }
 .entry-cover {
     display: inline-block;
@@ -2859,7 +2860,6 @@ a.learn-more{
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 15px;
-    box-shadow: 0 2px 0 #b34746;
     border: none;
     outline: none;
 }

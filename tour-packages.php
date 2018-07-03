@@ -78,8 +78,8 @@ include_once ('class/include.php');
             <div class="page-heading">
                 <h3>Tour Packages</h3>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Tour Packages</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="tour-packages.php">Tour Packages</a></li>
                 </ol>
             </div>
         </div><!-- Banner Section /- -->
@@ -88,10 +88,7 @@ include_once ('class/include.php');
         <div class="row">
             <div class="container-fluid no-padding blog">
                 <div class="section-padding1"></div>
-                <div class="container">			
-                    <div class="section-header we-do-more2">
-                        <h2>Tour Packages</h2>				
-                    </div>
+                <div class="container">	
                     <div class="row">
                         <?php foreach (TourPackage::all() as $tour_package) { ?>
                             <div class="col-md-4 col-sm-6 col-xs-12">

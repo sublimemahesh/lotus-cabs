@@ -75,24 +75,24 @@
             <div class="page-heading">
                 <h3>Gallery</h3>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Gallery</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="gallery.php">Gallery</a></li>
                 </ol>
             </div>
         </div>
         <!-- Banner Section /- -->
         <div class="container">
             <section id="gallery">
-                <div class="row">
+                <div class="row" style="padding-top: 10px;">
                     <?php
                     $ALBUM_PHOTO = new AlbumPhoto(NULL);
                     $IMAGES = $ALBUM_PHOTO->getAlbumPhotosById(3);
                     
                     foreach ($IMAGES as $image) {
                     ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3" >
                         <div class="gallery">
-                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 15px; padding-top: 20px;"/></a>
+                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 15px; "/></a>
                             <div class="clear"></div>
                         </div>
                     </div>

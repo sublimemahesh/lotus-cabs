@@ -76,8 +76,8 @@ include_once ('class/include.php');
             <div class="page-heading">
                 <h3>Services</h3>
                 <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Services</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active"><a href="service.php">Services</a></li>
                 </ol>
             </div>
         </div>
@@ -85,9 +85,6 @@ include_once ('class/include.php');
         <div class="container">
 
             <div class="row"  style="margin-top: 30px;">
-                <div class="section-header we-do-more2">
-                    <h2>Our Services</h2>				
-                </div>
                 <?php foreach (Service::all() as $key => $services) { ?>
                 <div class="col-md-4" style="padding-bottom: 15px;">
                         <div class="choose-us-box1">
