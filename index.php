@@ -51,7 +51,8 @@ include_once ('class/include.php');
     <!-- Custom - Theme CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/shortcodes.css">
-
+    <link href="css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
+    <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
@@ -140,6 +141,9 @@ include_once ('class/include.php');
                     ?>
 
                 </div><!-- Choose Carousel/- -->
+                <div class="text-center" style="position: relative;margin-top: 40px;">
+                    <a href="service.php"><button type="button" class="btn btn-primary"><b>View More</b></button></a>
+                </div>
             </div><!-- Container/- -->
         </div>
         <!-- Choose Us/- -->
@@ -175,6 +179,9 @@ include_once ('class/include.php');
                         ?>
                     </div>
                 </div>
+                <div class="text-center">
+                    <a href="tour-packages.php"><button type="button" class="btn btn-primary"><b>View More</b></button></a>
+                </div>
             </div>
             <div class="section-padding"></div>
         </div>
@@ -186,29 +193,34 @@ include_once ('class/include.php');
             <div class="section-padding1"></div>
             <div class="container">
                 <div class="section-header we-do-more2">
+                   <div class="text-center">
+                        <center> 
+                        <div id="TA_socialButtonBubbles748" class="TA_socialButtonBubbles"><ul id="95dqsoCEe7" class="TA_links wm8ih4GT"><li id="7FUuryAb7un" class="21MHbH96f"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=748&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+                        </center>     
+                   </div>
                     <h2>Words from Our Customers</h2>				
                 </div>
                 <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <?php
-                        foreach (Comments::all() as $key => $comment) {
+                        foreach (Comments::activeComments() as $key => $comment) {
                             if ($key === 0) {
                                 ?>
                                 <div class="item active">
-                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment'];?><i class="fa fa-quote-right"></i></p>
-                                    <span style="padding-bottom: 15px;"><?php echo $comment['name'];?></span>
+                                    <p><i class="fa fa-quote-left pull-left "></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
+                                    <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
-                                        <img src="upload/comments/<?php echo $comment['image_name'];?>" alt="" width="10%" class="img-circle"/>
+                                        <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
                                     </div>
                                 </div>
                             <?php } else {
                                 ?>
                                 <div class="item">
-                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment'];?><i class="fa fa-quote-right"></i></p>
-                                    <span style="padding-bottom: 15px;"><?php echo $comment['name'];?></span>
+                                    <p><i class="fa fa-quote-left pull-left " ></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
+                                    <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
-                                        <img src="upload/comments/<?php echo $comment['image_name'];?>" alt="" width="10%" class="img-circle"/>
+                                        <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
                                     </div>
                                 </div>
                                 <?php
@@ -255,8 +267,21 @@ include_once ('class/include.php');
 
     <!-- Library - FlexSlider v2.5.0 -->
     <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
-
+   
     <!-- Library - Theme JS -->
     <script src="js/functions.js"></script>
+    <script src="booking-form/scripts.js" type="text/javascript"></script>
+     <script src="js/jquery.datetimepicker.full.js" type="text/javascript"></script>
+    <script>
+        /*jslint browser:true*/
+        /*global jQuery, document*/
+
+        jQuery(document).ready(function () {
+            'use strict';
+
+            jQuery('#filter-date, #search-from-date, #search-to-date').datetimepicker();
+        });
+    </script>
+
 </body>
 </html>
