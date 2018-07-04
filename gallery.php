@@ -83,7 +83,7 @@
         <!-- Banner Section /- -->
         <div class="container">
             <section id="gallery">
-                <div class="row" style="padding-top: 10px;">
+                <div class="row" style="padding-top: 30px;">
                     <?php
                     $ALBUM_PHOTO = new AlbumPhoto(NULL);
                     $IMAGES = $ALBUM_PHOTO->getAlbumPhotosById(3);
