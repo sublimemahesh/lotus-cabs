@@ -1,68 +1,8 @@
-/*
-      [Table of contents]
 
-      ## Shortcodes
-              -- Photos Slider
-                      - Purchase
-                      - See More
-              -- Photos Slider2
-              -- Choose Us
-                      - Section Header
-                      - Choose Carousel
-              -- Book Details
-                      - Booking Details Form
-              -- What We Do
-                      - We Do More
-                      - What We Do Box
-                              - More Service
-              -- Members
-                      - Member Carousel
-                              - Driver Info
-                                      - Driver Skill
-                                      - Driver Type
-                              -- Member Style2
-              -- Testimonial
-              -- Counter App
-                      - Counter
-                      - Statistics Box
-                      - Get Mobile
-                              - Get Mobile Content
-                              - Get Mobile Playstore
-              -- Blog
-                      - Section Header
-                      - Blog Post List
-                      - Entry Cover
-                              - Post Meta
-                              - Entry Meta
-                                      - Meta Inner
-                                              - By line
-                                              - Post Comment
-                                      - Meta Inner
-                                              - Post Date
-                                              - Tags
-                      - Blog Content
-                              - Entry Title
-                              - Entry Content
-              -- Vehicle Fleet		
-              -- Blog Banner
-              -- Faq Section
-                      -- Accordion
-              
-      ## Responsive	
-              -- min-width: 1551 to max-width: 1750
-              -- min-width: 1201 to max-width: 1550
-              -- min-width: 992 to max-width: 1200
-              -- min-width: 768 to max-width: 991
-              -- max-width: 767
-              -- max-width: 991
-              
-*/
-
-/* ## Shortcodes */
 
 /* -- Photos Slider */
 .social-i{
-    margin-top: -4px;
+    margin-top: -2px;
 }
 .photos-slider .item::before{
     position: absolute;
@@ -125,7 +65,21 @@ a.see-more:hover{
     display: block; 
     max-width: 100%;
 }
-
+.black{
+    background-color: black;
+}
+.header-h1{
+    text-align: -moz-center; 
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.color-yellow{
+    color: #FF0;
+}
+.color-white{
+    color: white;
+}
 /* - Section Header */
 .section-header {
     margin-bottom: 60px;
@@ -798,7 +752,7 @@ a.see-more:hover{
 /*service*/
 .service-b {
     text-align: center;
-    background:url("../photos/tra.jpg");
+    background:url("../photos/shutterstock_397314796.jpg");
     display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -810,7 +764,7 @@ a.see-more:hover{
 .service-b::before {
     position: absolute;
     content: "";
-    background-color: #fff;
+    background-color: #ffffffe6;
     opacity: 0.9;
     top: 0;
     left: 0;
@@ -1023,7 +977,7 @@ a.see-more:hover{
 .tripA-2{
     float: right;
     margin-top: -258px;
-    margin-right: 102px;
+    margin-right: 106px;
 }
 .about-t{
     margin-top: -200px;
@@ -1036,10 +990,10 @@ a.see-more:hover{
     color: black;
 }
 .c-top{
-   margin-top: 80px;
+    margin-top: 80px;
 }
 .r-top{
-  padding-top: 30px;
+    padding-top: 30px;
 }
 /* -- Blog */
 .blog {
@@ -1219,7 +1173,7 @@ a.see-more:hover{
     color: #222;
     margin-bottom: 8px;
     text-align: left;
-    
+
 }
 .entry-content p {
     font-size: 13px;

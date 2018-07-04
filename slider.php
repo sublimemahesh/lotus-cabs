@@ -49,28 +49,28 @@
                         <span id="spanName" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
-                        <label for="txtEmail">Phone Number :</label>
-                        <input type="text" class="form-control" id="txtEmail" placeholder="Enter Phone Number" />
+                        <label for="txtEmail">Email:</label>
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Enter Email" />
                         <span id="spanEmail" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
-                        <label for="txt_startfrom">Pickup Place :</label>
-                        <input type="text" class="form-control" id="txt_startfrom" placeholder="Start From" />
+                        <label for="txt_startfrom">Pickup :</label>
+                        <input type="text" class="form-control" id="txt_startfrom" placeholder="Pickup" />
                         <span id="spanPickupPlace" ></span>
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
-                        <label for="txt_drop">Drop Place :</label>
-                        <input type="text" class="form-control" id="txt_drop" placeholder="Drop To" />
+                        <label for="txt_drop">Drop:</label>
+                        <input type="text" class="form-control" id="txt_drop" placeholder="Drop" />
                         <span id="spanDropPlace" ></span>
                     </div>
-                    <div class="form-group col-md-12" id="filters">
-                        <label for="txt_pickup">Date Pickup :</label>  									
+                     <div class="form-group col-md-12">
+                        <label for="txt_pickup">Date:</label>                                   
                         <div id="datepicker" class="input-group">
-                            <input class="form-control"  id="txt_pickup filter-dateid search-to-date"class="form-control" type="text" name="filter-date" placeholder="YYYY/MM/DD  HH:MM" />
+                            <input class="form-control" type="text" placeholder="YYYY/MM/DD HH:MM"  name="filter-date" id="filter-date"/>
                             <span class="add-on">
-                                <i data-time-icon="icon-time" data-date-icon="icon-calendar"><img src="images/icon/date-picker.png" alt="datepicker" /></i>
+                               
                             </span>
-                            <span id="spanDatePickup" ></span>                       
+                            <span id="spanDatePickup" ></span>
                         </div>
                     </div>
                     <div class="form-group col-md-12">
@@ -78,10 +78,12 @@
                         <input type="number" class="form-control" id="txt_passengers" placeholder="Enter Passengers" />
                         <span id="spanNumberOfPassengers" ></span>
                     </div>
+
+
                     <div class="col-md-12">
                         <button type="submit" id="btnSubmit" title="submit" class="btn">Submit</button></div>
                     <div id="dismessage-msg" class="alert-msg"></div>
-               </form>
+               
            </div>
             </div>
        </div>

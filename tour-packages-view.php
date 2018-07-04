@@ -136,50 +136,80 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
             </div>
             <div class="section-padding"></div>				
         </div>
+    </div>
 
 
-        <!--Footer -->
-        <?php include './footer.php'; ?>
-        <!--Footer End-->
+    <div class="container-fluid" >
+        <div class="row" style="  background-color: black;">
+            <div class="header-h1"><h1><b>How It Works</b></h1></div>
+            <div class="col-md-4 col-sm-6">
+                <div class="color-yellow">
+                    <h4>1. Submit Ride Details</h4>
+                </div>
+                <ul class="color-white">
+                    Fill- up online ride detail form and submit.
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div  class="color-yellow">
+                    <h4>2. Get the quote</h4>
+                </div>
+                <ul class="color-white">
+                    We will send you the best rate availble.
+                </ul>
+            </div>           
+            <div class="col-md-4 col-sm-6">
+                <div  class="color-yellow">
+                    <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                </div>
+                <ul class="color-white">
+                    You can confirm the offered deal online and you will receive the driver details.
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Footer -->
+    <?php include './footer.php'; ?>
+    <!--Footer End-->
 
 
-    </div><!-- Main Container -->
-    <!-- JQuery v1.11.3 -->
-    <script src="js/jquery.min.js"></script>
+</div><!-- Main Container -->
+<!-- JQuery v1.11.3 -->
+<script src="js/jquery.min.js"></script>
 
-    <!-- Library - Modernizer -->
-    <script src="libraries/modernizr/modernizr.js"></script>
+<!-- Library - Modernizer -->
+<script src="libraries/modernizr/modernizr.js"></script>
 
-    <!-- Library - Bootstrap v3.3.5 -->
-    <script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
-    <script src="libraries/bootstrap/bootstrap-datetimepicker.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
+<!-- Library - Bootstrap v3.3.5 -->
+<script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
+<script src="libraries/bootstrap/bootstrap-datetimepicker.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
 
-    <!-- jQuery Easing v1.3 -->
-    <script src="js/jquery.easing.min.js"></script>
+<!-- jQuery Easing v1.3 -->
+<script src="js/jquery.easing.min.js"></script>
 
-    <!-- Library - jQuery.appear -->
-    <script src="libraries/appear/jquery.appear.js"></script>
+<!-- Library - jQuery.appear -->
+<script src="libraries/appear/jquery.appear.js"></script>
 
-    <!-- Library - OWL Carousel V.2.0 beta -->
-    <script src="libraries/owl-carousel/owl.carousel.min.js"></script>
+<!-- Library - OWL Carousel V.2.0 beta -->
+<script src="libraries/owl-carousel/owl.carousel.min.js"></script>
 
-    <!-- jQuery For Number Counter -->	
-    <script src="libraries/number/jquery.animateNumber.min.js"></script>
+<!-- jQuery For Number Counter -->	
+<script src="libraries/number/jquery.animateNumber.min.js"></script>
 
-    <!-- Library - Google Map API -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<!-- Library - Google Map API -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-    <!-- Library - FlexSlider v2.5.0 -->
-    <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
+<!-- Library - FlexSlider v2.5.0 -->
+<script defer src="libraries/flexslider/jquery.flexslider.js"></script>
 
-    <!-- Library - Theme JS -->
-    <script src="js/functions.js"></script>
-    <script src="js/lightbox.js" type="text/javascript"></script>
-    <script>
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true
-        })
-    </script>
+<!-- Library - Theme JS -->
+<script src="js/functions.js"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+</script>
 </body>
 </html>

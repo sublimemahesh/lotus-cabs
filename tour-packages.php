@@ -94,15 +94,15 @@ include_once ('class/include.php');
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <article class="blog-post-list">
                                     <div class="entry-cover" style="padding-bottom: 10px;">
-                                        <a href="#">
-                                            <img src="upload/tour-package/<?php echo $tour_package['image_name'];?>" alt=""/>
+                                        <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" >
+                                            <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""/>
                                         </a>
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="entry-title"><?php echo $tour_package['title']?></h3>
+                                        <h3 class="entry-title"><?php echo $tour_package['title'] ?></h3>
                                         <div class="entry-content">
-                                            <p class="text-justify"><?php echo substr($tour_package['short_description'],0,120)?>...</p>
-                                            <a href="tour-packages-view.php?id=<?php echo $tour_package['id']?>" title="Read More" class="pull-right">Read More</a>
+                                            <p class="text-justify"><?php echo substr($tour_package['short_description'], 0, 120) ?>...</p>
+                                            <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" title="Read More" class="pull-right">Read More</a>
                                         </div>
                                     </div>
                                 </article>
@@ -116,7 +116,35 @@ include_once ('class/include.php');
             </div>
         </div>
 
-
+        <div class="container-fluid" >
+            <div class="row" style="  background-color: black;">
+                <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="color-yellow">
+                        <h4>1. Submit Ride Details</h4>
+                    </div>
+                    <ul class="color-white">
+                        Fill- up online ride detail form and submit.
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>2. Get the quote</h4>
+                    </div>
+                    <ul class="color-white">
+                        We will send you the best rate availble.
+                    </ul>
+                </div>           
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                    </div>
+                    <ul class="color-white">
+                        You can confirm the offered deal online and you will receive the driver details.
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!--Footer -->
         <?php include './footer.php'; ?>
         <!--Footer End-->

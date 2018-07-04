@@ -152,6 +152,35 @@
         </div><!-- contact map /- -->
 
 
+        <div class="container-fluid" >
+            <div class="row" style="  background-color: black;">
+                <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="color-yellow">
+                        <h4>1. Submit Ride Details</h4>
+                    </div>
+                    <ul class="color-white">
+                        Fill- up online ride detail form and submit.
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>2. Get the quote</h4>
+                    </div>
+                    <ul class="color-white">
+                        We will send you the best rate availble.
+                    </ul>
+                </div>           
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                    </div>
+                    <ul class="color-white">
+                        You can confirm the offered deal online and you will receive the driver details.
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!--Footer -->
         <?php include './footer.php'; ?>
         <!--Footer End-->

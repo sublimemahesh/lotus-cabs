@@ -193,11 +193,11 @@ include_once ('class/include.php');
             <div class="section-padding1"></div>
             <div class="container">
                 <div class="section-header we-do-more2">
-                   <div class="text-center">
+<!--                    <div class="text-center">
                         <center> 
-                        <div id="TA_socialButtonBubbles748" class="TA_socialButtonBubbles"><ul id="95dqsoCEe7" class="TA_links wm8ih4GT"><li id="7FUuryAb7un" class="21MHbH96f"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=748&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+                            <div id="TA_socialButtonBubbles748" class="TA_socialButtonBubbles"><ul id="95dqsoCEe7" class="TA_links wm8ih4GT"><li id="7FUuryAb7un" class="21MHbH96f"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=748&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
                         </center>     
-                   </div>
+                    </div>-->
                     <h2>Words from Our Customers</h2>				
                 </div>
                 <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
@@ -209,9 +209,8 @@ include_once ('class/include.php');
                                 ?>
                                 <div class="item active">
 
-                                    <p><i class="fa fa-quote-left pull-left "></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
-
-                                    <p><i class="fa fa-quote-left"></i><?php echo $comment['comment']; ?><i class="fa fa-quote-right"></i></p>
+                                   
+                                    <p><?php echo $comment['comment']; ?></p>
 
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
@@ -222,7 +221,7 @@ include_once ('class/include.php');
                                 ?>
                                 <div class="item">
 
-                                    <p><i class="fa fa-quote-left pull-left " ></i><?php echo $comment['comment'] ?><i class="fa fa-quote-right pull-right"></i></p>
+                                    <p><?php echo $comment['comment'] ?></p>
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
                                         <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
@@ -239,47 +238,47 @@ include_once ('class/include.php');
             <img src="images/border-pattern.jpg" alt="border"/>
         </div><!-- Testimonial/- -->
 
-        
-            <div class="container-fluid" >
-                <div class="row" style="background-color: black; margin-bottom: 50px;">
-                    <div style="text-align: -moz-center; color: white; padding-bottom: 40px;"><h1>How It Works</h1></div>
+
+        <div class="container-fluid" >
+            <div class="row" style="  background-color: black;">
+                <div class="header-h1"><h1><b>How It Works</b></h1></div>
                 <div class="col-md-4 col-sm-6">
-                    <div style="color: #FF0;">
+                    <div class="color-yellow">
                         <h4>1. Submit Ride Details</h4>
-                   </div>
-                   <ul style="color: #fff;">
-                       Fill- up online ride detail form and submit.
-                   </ul>
+                    </div>
+                    <ul class="color-white">
+                        Fill- up online ride detail form and submit.
+                    </ul>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div style="color: #FF0;">
+                    <div  class="color-yellow">
                         <h4>2. Get the quote</h4>
                     </div>
-                    <ul style="color: #fff;">
+                    <ul class="color-white">
                         We will send you the best rate availble.
                     </ul>
-                </div>			
+                </div>           
                 <div class="col-md-4 col-sm-6">
-                    <div style="color: #FF0;">
-                        <h4>3. Confirm the deal. Enjoy your ride.</h4> 
+                    <div  class="color-yellow">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
                     </div>
-                    <ul style="color: #fff;">
-                 You can confirm the offered deal online and you will receive the driver details. 
+                    <ul class="color-white">
+                        You can confirm the offered deal online and you will receive the driver details.
                     </ul>
                 </div>
-            </div> 
             </div>
-          </div><!-- Main Container -->
+        </div>
+    </div><!-- Main Container -->
 
 
-        <!--Footer -->
-        <?php include './footer.php'; ?>
-        <!--Footer End-->
+    <!--Footer -->
+    <?php include './footer.php'; ?>
+    <!--Footer End-->
 
 
     <!-- JQuery v1.11.3 -->
-    <script src="js/jquery.min.js"></script>
 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
     <!-- Library - Modernizer -->
     <script src="libraries/modernizr/modernizr.js"></script>
 
@@ -304,11 +303,11 @@ include_once ('class/include.php');
 
     <!-- Library - FlexSlider v2.5.0 -->
     <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
-   
+
     <!-- Library - Theme JS -->
     <script src="js/functions.js"></script>
     <script src="booking-form/scripts.js" type="text/javascript"></script>
-     <script src="js/jquery.datetimepicker.full.js" type="text/javascript"></script>
+    <script src="js/jquery.datetimepicker.full.js" type="text/javascript"></script>
     <script>
         /*jslint browser:true*/
         /*global jQuery, document*/
