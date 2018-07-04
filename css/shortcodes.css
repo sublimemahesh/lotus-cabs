@@ -1873,7 +1873,7 @@ a.learn-more{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: #000000b3;
     opacity: 0.8;
     display: inline-block;
 }
@@ -2923,7 +2923,7 @@ a.learn-more{
         margin-bottom: 15px;
     }
     .book-taxi-form .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 8px;
     }
 }
 /* -- min-width: 1201 to max-width: 1365 */
