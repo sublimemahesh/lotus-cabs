@@ -332,4 +332,4 @@ function ValidateEmail(field, validatordiv)
         return false;
     }
 }
->>>>>>> #54 Create send booking form
+

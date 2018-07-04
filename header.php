@@ -11,8 +11,9 @@
                 <li><a href="#"><img src="images/icon/tw-ic.png" alt="Twitter" class="social-i"/></a></li>
             </ul>
             <div class="col-md-2 pull-right top-menu">
-                <div class="no-bottom-margin" style="float:right">
-                    <div id="TA_socialButtonBubbles979" class="TA_socialButtonBubbles"><ul id="yEI1wb" class="TA_links vxiMBTz8xK"><li id="FR4JQ6b3" class="ZFVXyNObPQEP"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=979&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>            </div>
+                <div class="no-bottom-margin" style="float:right; padding-bottom: 4px;">
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="photos/erty.JPG" alt=""/></a>
+                </div>
             </div><!-- Container /- -->
         </div><!-- Top Header /- -->
 
@@ -35,7 +36,7 @@
                     </div>
                     <div class="phone">
                         <img src="images/icon/phone-ic.png" alt="phone" />
-                        <p>Call Us Any Time:<span>+949 172 23223</span></p>
+                        <p>Call Us Any Time:<span>+94 91 722 3223</span></p>
                     </div>
 
                 </div>

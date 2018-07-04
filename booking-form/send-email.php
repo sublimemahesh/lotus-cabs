@@ -64,7 +64,7 @@ if (mail($visitor_email, $subject, $visitor_message, $headers1) && mail($comEmai
     exit();
 } 
 
-<?php
+
 
 //----------------------Company Information---------------------
 

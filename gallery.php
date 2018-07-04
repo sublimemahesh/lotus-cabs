@@ -87,20 +87,50 @@
                     <?php
                     $ALBUM_PHOTO = new AlbumPhoto(NULL);
                     $IMAGES = $ALBUM_PHOTO->getAlbumPhotosById(3);
-                    
+
                     foreach ($IMAGES as $image) {
-                    ?>
-                    <div class="col-md-3" >
-                        <div class="gallery">
-                            <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 15px; "/></a>
-                            <div class="clear"></div>
+                        ?>
+                        <div class="col-md-3" >
+                            <div class="gallery">
+                                <a href="upload/photo-album/gallery/<?php echo $image['image_name']; ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $image['image_name']; ?>" alt="" title="lotus-Galle" style="padding-bottom: 15px; "/></a>
+                                <div class="clear"></div>
+                            </div>
                         </div>
-                    </div>
                     <?php }
                     ?>
 
                 </div>
             </section>
+        </div>
+
+        <div class="container-fluid" >
+            <div class="row" style="  background-color: black;">
+                <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="color-yellow">
+                        <h4>1. Submit Ride Details</h4>
+                    </div>
+                    <ul class="color-white">
+                        Fill- up online ride detail form and submit.
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>2. Get the quote</h4>
+                    </div>
+                    <ul class="color-white">
+                        We will send you the best rate availble.
+                    </ul>
+                </div>           
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                    </div>
+                    <ul class="color-white">
+                        You can confirm the offered deal online and you will receive the driver details.
+                    </ul>
+                </div>
+            </div>
         </div>
         <!--Footer -->
         <?php include './footer.php'; ?>

@@ -86,7 +86,7 @@ include_once ('class/include.php');
 
             <div class="row"  style="margin-top: 30px;">
                 <?php foreach (Service::all() as $key => $services) { ?>
-                <div class="col-md-4" style="padding-bottom: 15px;">
+                    <div class="col-md-4" style="padding-bottom: 15px;">
                         <div class="choose-us-box1">
                             <div class="choose-img-box2">
                                 <img src="upload/service/<?php echo $services['image_name'] ?>" alt=""/>
@@ -94,7 +94,7 @@ include_once ('class/include.php');
                             <div class="choose-us-content-box1">
                                 <h3><?php echo $services['title'] ?></h3>
                                 <p class="text-justify"><?php echo substr($services['short_description'], 0, 110); ?>...</p>
-                                <a href="service-view.php?id=<?php echo $services['id']?>">Read More</a>
+                                <a href="service-view.php?id=<?php echo $services['id'] ?>">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -105,6 +105,35 @@ include_once ('class/include.php');
 
         </div>
 
+        <div class="container-fluid" >
+            <div class="row" style="  background-color: black;">
+                <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="color-yellow">
+                        <h4>1. Submit Ride Details</h4>
+                    </div>
+                    <ul class="color-white">
+                        Fill- up online ride detail form and submit.
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>2. Get the quote</h4>
+                    </div>
+                    <ul class="color-white">
+                        We will send you the best rate availble.
+                    </ul>
+                </div>           
+                <div class="col-md-4 col-sm-6">
+                    <div  class="color-yellow">
+                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                    </div>
+                    <ul class="color-white">
+                        You can confirm the offered deal online and you will receive the driver details.
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 
         <!--Footer -->
