@@ -102,7 +102,7 @@ include_once ('class/include.php');
                 <div class="col-md-8 pull-right">
                     <div class="we-do-more ">
                         <h3>Welcome to </h3>
-                        <h2>lotus cabs - Sri Lanka</h2>
+                        <h2>lotus cabs & Tourist - Sri Lanka</h2>
 
                         <p class="text-justify"><?php echo $PAGES->description ?></p>
                     </div>
@@ -242,6 +242,7 @@ include_once ('class/include.php');
         <div class="container-fluid" >
             <div class="row" style="  background-color: black;">
                 <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="container">
                 <div class="col-md-4 col-sm-6">
                     <div class="color-yellow">
                         <h4>1. Submit Ride Details</h4>
@@ -266,6 +267,7 @@ include_once ('class/include.php');
                         You can confirm the offered deal online and you will receive the driver details.
                     </ul>
                 </div>
+            </div>
             </div>
         </div>
     </div><!-- Main Container -->

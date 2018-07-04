@@ -1,7 +1,17 @@
 <footer class="footer-main">
     <!-- Container -->
     <div class="container">			
-        <div class="col-md-4 col-sm-6"><div id="TA_cdswritereviewlg378" class="TA_cdswritereviewlg"><ul id="etLcVLe777" class="TA_links UappJZ4"><li id="aqLcRCZaXTHa" class="YaYzEi9cgwy"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/medium-logo-12097-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=378&amp;locationId=12150412&amp;lang=en_US&amp;lang=en_US&amp;display_version=2"></script> </div>
+        <div class="col-md-4 col-sm-6">
+            <div id="TA_selfserveprop161" class="TA_selfserveprop">
+                <ul id="8C6FW7LYuMGC" class="TA_links M3Evid9v9y">
+                    <li id="gYy7k0N6cu" class="XV22Qv">
+                        <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
+                    </li>
+                </ul>
+            </div>
+            <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=161&amp;locationId=12150412&amp;lang=en_US&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+        </div>
+
         <div class="col-md-4 col-sm-6">
             <aside class="widget widget-links">
                 <h3 class="widget-title">We Glad To Offer</h3>
@@ -29,7 +39,7 @@
     <div class="bottom-footer container-fluid no-padding">
         <div class="container">
             <div class="col-md-7 pull-right">
-                <p class="copyright">copyrights &copy; 2018 Sublime Holdings. All rights reserved</p>
+                <p class="copyright">copyrights &copy; 2018 Lotus Cabs. All rights reserved</p>
             </div>
         </div>
     </div>

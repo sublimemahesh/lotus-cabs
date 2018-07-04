@@ -155,6 +155,7 @@
         <div class="container-fluid" >
             <div class="row" style="  background-color: black;">
                 <div class="header-h1"><h1><b>How It Works</b></h1></div>
+                <div class="container">
                 <div class="col-md-4 col-sm-6">
                     <div class="color-yellow">
                         <h4>1. Submit Ride Details</h4>
@@ -179,6 +180,7 @@
                         You can confirm the offered deal online and you will receive the driver details.
                     </ul>
                 </div>
+            </div>
             </div>
         </div>
         <!--Footer -->
