@@ -3503,3 +3503,53 @@ a.learn-more{
         font-size: 11px;
     }
 }
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+    .social li{
+        margin-right: 0px;
+    }
+    .logo-block a img{
+        width: 100%;
+    }
+
+    .email-logo{
+        width: 15%;
+        margin-left: -42px;
+        margin-top: 5px;
+    }
+    .phone1{
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-right: 40px;
+    }
+    .phone2{
+        position: relative;
+        padding-left: 8px;
+        display: inline-block;
+        text-align: left;
+        margin-right: 80px;
+    }
+    .phone-icon{
+        margin-left: -50px;
+    }
+    .new-padding{
+        margin-top: 0px;
+    }
+    .footer-padd-top{
+        padding-top: 20px;
+    }
+    .form-top{
+        margin-top: 0px;
+    }
+    .phone1 p span{
+        font-size: 15px;
+        font-weight: 600;
+        color: #0fa0ce;
+    }
+    .middle-header{
+        padding: 0px;
+    }
+    .we-do-more{
+        margin-top: -50px;
+    }
+}

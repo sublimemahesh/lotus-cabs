@@ -1,38 +1,4 @@
-/*
-        Theme Name: National Cab - Taxi Company HTML5 Template
-        Author: EraThemes
-        Author URL: http://themeforest.net/user/erathemes
-        Created: 01 Oct 2015
-        Updated: 12 Oct 2015 
-        Version: 1.0
-*/
 
-/*
-        [Table of contents]
-
-        ## Global
-                - Font Settings
-                - Padding/Margin
-
-        ## Header
-                - Top Header
-                        -- Social
-                        -- Top Menu
-                        -- Logo block
-                - Navigation Menu
-                - Social Icons
-
-        ## Footer
-                - Copyright Text	
-                
-        ## Responsive
-                -- min-width: 992 to max-width: 1200
-                -- min-width: 768 to max-width: 991
-                -- min-width: 319 to max-width: 767
-                -- min-width: 991
-*/
-
-/* ## Global */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -81,10 +47,10 @@ a {
     margin-left: 16px;
 }
 .t6-color{
-   background-color: black; 
+    background-color: black; 
 }
 .t7-padding{
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 /* - Font Settings */
 .logo-block a b,
@@ -360,7 +326,7 @@ ul {
     margin-left: 26px;
 }
 .phone > img { 
-    top: 7px;
+    top: 0px;
 }
 .phone p {
     font-size: 15px;
@@ -482,7 +448,14 @@ ul {
 .widget-subscribe  ul li a:hover img {
     top: -38px;
 }
-
+.email-logo{
+    width: 20%;float: left;
+    margin-left: -27px;
+    margin-top: -6px;
+}
+.form-top{
+    margin-top: -15px;
+}
 
 
 .footer-main .widget-title {
@@ -583,11 +556,10 @@ ul {
     .top-header .top-menu,
     .logo-block,
     .middle-header .col-md-6	{
-        width: 100%;
-        text-align: center;
+        float: left;
     }
     .top-header .social {
-        margin-bottom: 14px;
+
     }
     .top-header .top-menu {
         padding: 0;
@@ -598,10 +570,10 @@ ul {
         padding-right: 10px;
     }
     .logo-block {
-        margin-bottom: 33px;
+
     }
     .logo-block a {
-        max-width: 220px;
+        
         display: inline-block;
         position: relative;
     }
@@ -615,8 +587,8 @@ ul {
     /* ## Footer */
     .bottom-footer ul,
     .bottom-footer p {	
-        width: 100%;
-        text-align: center;
+
+        text-align: left;
     }
     .bottom-footer,
     .bottom-footer ul,

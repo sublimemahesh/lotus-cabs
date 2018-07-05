@@ -40,7 +40,7 @@
     <!-- Booking Form -->
     <div class="booking-form">
         <div class="container">
-            <div class="col-md-4" style="margin-top: -15px;">
+            <div class="col-md-4 col-sm-12 col-xs-12 form-top" >
                 <div id="contact-form" method="post" class="book-taxi-form">
                     <h3>Book Your Taxi Now</h3>
                     <div class="form-group col-md-6 col-sm-6 slider-form-paddig">
