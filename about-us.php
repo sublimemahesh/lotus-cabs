@@ -11,7 +11,7 @@ include_once ('class/include.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - About us</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />

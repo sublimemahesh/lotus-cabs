@@ -4,7 +4,7 @@
         <div class="col-md-4 col-sm-6">
             <div id="TA_selfserveprop161" class="TA_selfserveprop">
                 <ul id="8C6FW7LYuMGC" class="TA_links M3Evid9v9y">
-                    <li id="gYy7k0N6cu" class="XV22Qv">
+                    <li id="gYy7k0N6cu" class="XV22Qv" > 
                         <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
                     </li>
                 </ul>

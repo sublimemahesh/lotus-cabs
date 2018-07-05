@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Contact us</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -93,7 +93,7 @@
                         <div class="col-md-4">
                             <!-- Section Header -->
                             <div class="section-header">
-                                <h3>Lotus-cabs</h3>
+                                <h3>lotus cabs & Tourist - Sri Lanka </h3>
                             </div><!-- Section Header -->
                             <p>That this group would somehow form a family that is the way we all became the brady bunch baby.</p>
                             <p>Got kind of tired packin' and unpackin' - town to town and up and down the dial. Movin' on up to the east side. We finally got a piece of the pie.</p>

@@ -10,11 +10,10 @@ $SERVICES = new Service($id);
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Service View</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -92,8 +91,7 @@ $SERVICES = new Service($id);
                 <!-- Container -->
                 <div class="container">		
                     <!-- Blog Area -->
-                    <div class="col-md-9 blog-area">				
-
+                    <div class="col-md-9 blog-area">	
                         <article class="blog-post-list2">					
                             <div class="entry-cover">
                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -136,13 +134,9 @@ $SERVICES = new Service($id);
                                     <h3 class="entry-title"><?php echo $SERVICES->title ?></h3>
                                     <div class="entry-content">
                                         <p class="text-justify"><?php echo $SERVICES->description ?></p>
-
                                     </div>
                                 </div>
-                        </article>
-
-                        <!-- Pagination -->
-
+                        </article>                    
                     </div><!-- Blog Area/- -->
 
                     <!-- Widget Area -->
@@ -156,7 +150,6 @@ $SERVICES = new Service($id);
                             foreach (Service::all() as $key => $other_services) {
                                 if ($key < 5) {
                                     ?>
-
                                     <div class="recent-post-box2">
                                         <div class="recent-title2 col-md-8 col-sm-10 col-xs-8 no-padding">
                                             <a href="service-view.php?id=<?php echo $other_services['id'] ?>"><?php echo $other_services['title'] ?></a>
@@ -219,32 +212,23 @@ $SERVICES = new Service($id);
     </div><!-- Main Container -->
     <!-- JQuery v1.11.3 -->
     <script src="js/jquery.min.js"></script>
-
     <!-- Library - Modernizer -->
     <script src="libraries/modernizr/modernizr.js"></script>
-
     <!-- Library - Bootstrap v3.3.5 -->
     <script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
     <script src="libraries/bootstrap/bootstrap-datetimepicker.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
-
     <!-- jQuery Easing v1.3 -->
     <script src="js/jquery.easing.min.js"></script>
-
     <!-- Library - jQuery.appear -->
     <script src="libraries/appear/jquery.appear.js"></script>
-
     <!-- Library - OWL Carousel V.2.0 beta -->
     <script src="libraries/owl-carousel/owl.carousel.min.js"></script>
-
     <!-- jQuery For Number Counter -->	
     <script src="libraries/number/jquery.animateNumber.min.js"></script>
-
     <!-- Library - Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
     <!-- Library - FlexSlider v2.5.0 -->
     <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
-
     <!-- Library - Theme JS -->
     <script src="js/functions.js"></script>
 </body>

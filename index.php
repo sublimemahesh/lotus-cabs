@@ -12,7 +12,7 @@ include_once ('class/include.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Home Page</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -83,7 +83,7 @@ include_once ('class/include.php');
             $PAGES = new Page(2);
             ?>
 
-            <div class="image-box" style="padding-top: 40px;">
+            <div class="image-box re-padding" >
 
                 <img src="photos/10.jpg" alt=""/>
                 <div class="tripA-1">
@@ -114,7 +114,7 @@ include_once ('class/include.php');
         <!-- What We Do/- -->
 
         <!-- Choose Us -->
-        <div class="container no-padding service-b" style="margin-top: 360px;;">
+        <div class="container no-padding service-b new-padding" >
             <!-- Container -->
             <div class="container ">
                 <div class="section-header2 we-do-more2">
@@ -141,7 +141,7 @@ include_once ('class/include.php');
                     ?>
 
                 </div><!-- Choose Carousel/- -->
-                <div class="text-center" style="position: relative;margin-top: 40px;">
+                <div class="text-center style-btn" >
                     <a href="service.php"><button type="button" class="btn btn-primary"><b>View More</b></button></a>
                 </div>
             </div><!-- Container/- -->
@@ -193,11 +193,11 @@ include_once ('class/include.php');
             <div class="section-padding1"></div>
             <div class="container">
                 <div class="section-header we-do-more2">
-<!--                    <div class="text-center">
-                        <center> 
-                            <div id="TA_socialButtonBubbles748" class="TA_socialButtonBubbles"><ul id="95dqsoCEe7" class="TA_links wm8ih4GT"><li id="7FUuryAb7un" class="21MHbH96f"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=748&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
-                        </center>     
-                    </div>-->
+                    <!--                    <div class="text-center">
+                                            <center> 
+                                                <div id="TA_socialButtonBubbles748" class="TA_socialButtonBubbles"><ul id="95dqsoCEe7" class="TA_links wm8ih4GT"><li id="7FUuryAb7un" class="21MHbH96f"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297896-d12150412-Reviews-LOTUS_CABS-Galle_Galle_District_Southern_Province.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=748&amp;locationId=12150412&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+                                            </center>     
+                                        </div>-->
                     <h2>Words from Our Customers</h2>				
                 </div>
                 <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
@@ -207,26 +207,23 @@ include_once ('class/include.php');
                         foreach (Comments::activeComments() as $key => $comment) {
                             if ($key === 0) {
                                 ?>
-                                <div class="item active">
-
-                                   
+                                <div class="item active">                                   
                                     <p><?php echo $comment['comment']; ?></p>
-
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
                                         <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
                                     </div>
                                 </div>
-                            <?php } else {
+                                <?php
+                            } else {
                                 ?>
                                 <div class="item">
-
                                     <p><?php echo $comment['comment'] ?></p>
                                     <span style="padding-bottom: 15px;"><?php echo $comment['name']; ?></span>
                                     <div class="text-center">
                                         <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="" width="10%" class="img-circle"/>
                                     </div>
-                                </div>
+                                </div>  
                                 <?php
                             }
                         }
@@ -238,36 +235,35 @@ include_once ('class/include.php');
             <img src="images/border-pattern.jpg" alt="border"/>
         </div><!-- Testimonial/- -->
 
-
         <div class="container-fluid" >
             <div class="row" style="  background-color: black;">
                 <div class="header-h1"><h1><b>How It Works</b></h1></div>
                 <div class="container">
-                <div class="col-md-4 col-sm-6">
-                    <div class="color-yellow">
-                        <h4>1. Submit Ride Details</h4>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="color-yellow">
+                            <h4>1. Submit Ride Details</h4>
+                        </div>
+                        <ul class="color-white">
+                            Fill- up online ride detail form and submit.
+                        </ul>
                     </div>
-                    <ul class="color-white">
-                        Fill- up online ride detail form and submit.
-                    </ul>
+                    <div class="col-md-4 col-sm-6">
+                        <div  class="color-yellow">
+                            <h4>2. Get the quote</h4>
+                        </div>
+                        <ul class="color-white">
+                            We will send you the best rate availble.
+                        </ul>
+                    </div>           
+                    <div class="col-md-4 col-sm-6">
+                        <div  class="color-yellow">
+                            <h4>3. Confirm the deal. Enjoy your ride.</h4>
+                        </div>
+                        <ul class="color-white">
+                            You can confirm the offered deal online and you will receive the driver details.
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div  class="color-yellow">
-                        <h4>2. Get the quote</h4>
-                    </div>
-                    <ul class="color-white">
-                        We will send you the best rate availble.
-                    </ul>
-                </div>           
-                <div class="col-md-4 col-sm-6">
-                    <div  class="color-yellow">
-                        <h4>3. Confirm the deal. Enjoy your ride.</h4>
-                    </div>
-                    <ul class="color-white">
-                        You can confirm the offered deal online and you will receive the driver details.
-                    </ul>
-                </div>
-            </div>
             </div>
         </div>
     </div><!-- Main Container -->
@@ -283,29 +279,21 @@ include_once ('class/include.php');
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <!-- Library - Modernizer -->
     <script src="libraries/modernizr/modernizr.js"></script>
-
     <!-- Library - Bootstrap v3.3.5 -->
     <script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
     <script src="libraries/bootstrap/bootstrap-datetimepicker.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
-
     <!-- jQuery Easing v1.3 -->
     <script src="js/jquery.easing.min.js"></script>
-
     <!-- Library - jQuery.appear -->
     <script src="libraries/appear/jquery.appear.js"></script>
-
     <!-- Library - OWL Carousel V.2.0 beta -->
     <script src="libraries/owl-carousel/owl.carousel.min.js"></script>
-
     <!-- jQuery For Number Counter -->	
     <script src="libraries/number/jquery.animateNumber.min.js"></script>
-
     <!-- Library - Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
     <!-- Library - FlexSlider v2.5.0 -->
     <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
-
     <!-- Library - Theme JS -->
     <script src="js/functions.js"></script>
     <script src="booking-form/scripts.js" type="text/javascript"></script>
