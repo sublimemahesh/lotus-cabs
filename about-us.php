@@ -87,7 +87,7 @@ include_once ('class/include.php');
         <div class="container no-padding what-we-do ">
             <!-- Container -->
             <div class="row r-top" >
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12 col-sm-12">
                     <div class="text-center">
                         <img src="images/about-us/eye.png" alt=""/>
                     </div>
@@ -100,8 +100,7 @@ include_once ('class/include.php');
 
                 </div>
 
-                <div class="col-md-4">
-
+                <div class="col-md-4  col-xs-12 col-sm-12">
                     <div class="text-center">
                         <img src="images/about-us/response-value.png" alt=""/>
                     </div>
@@ -112,8 +111,7 @@ include_once ('class/include.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-
+                <div class="col-md-4  col-xs-12 col-sm-12">
                     <div class="text-center">
                         <img src="images/about-us/vission.png" alt=""/>
                     </div>

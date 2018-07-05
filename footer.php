@@ -14,7 +14,7 @@
 
         <div class="col-md-4 col-sm-6">
             <aside class="widget widget-links">
-                <h3 class="widget-title">We Glad To Offer</h3>
+                <h3 class="widget-title footer-padd-top">We Glad To Offer</h3>
                 <ul>
                     <li><a href="#">24 / 7 Taxi Service To Any Where Around The City</a></li>
                     <li><a href="#">Sending Taxi Booking Alert By SMS</a></li>

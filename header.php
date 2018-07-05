@@ -21,22 +21,26 @@
         <div class="middle-header container-fluid no-padding">
             <!-- Container -->
             <div class="container">
-                <div class="col-md-4 logo-block pull-left">
+                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
                     <a href="index.php">
-                        <img src="images/logo/lotus-logo.png" alt=""/>
-
+                        <center>
+                            <img src="images/logo/lotus-logo.png" alt="" style="width: 60%"/>
+                        </center>
                     </a>
                 </div>
-                <div class="col-md-6 pull-right">
-                    <div class="phone">
-                        <img src="images/icon/email.png" alt="Location" style="width: 20%;float: left;
-                             margin-left: -27px;
-                             margin-top: -6px;">
-                        <p>Email Us Any Time:<span>contact@lotuscabs.lk</span></p>
+                <div class="col-md-4 col-sm-12 col-xs-12 logo-block pull-left hidden-sm hidden-xs">
+                    <a href="index.php">
+                        <img src="images/logo/lotus-logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 pull-right padding-o">
+                    <div class="phone phone1">
+                        <img src="images/icon/email.png" alt="Location" class="email-logo">
+                        <p class="hidden-sm hidden-xs">Email Us Any Time:</p><p><span>contact@lotuscabs.lk</span></p>
                     </div>
-                    <div class="phone">
-                        <img src="images/icon/phone-ic.png" alt="phone" />
-                        <p>Call Us Any Time:<span>+94 91 722 3223</span></p>
+                    <div class="phone phone2">
+                        <img src="images/icon/phone-ic.png" alt="phone" class="phone-icon" style="width: 16%;"/>
+                        <p class="hidden-sm hidden-xs">Call Us Any Time:</p><p><span>+94 91 722 3223</span></p>
                     </div>
 
                 </div>
@@ -62,30 +66,15 @@
                     <ul class="nav navbar-nav">
                         <li class="active dropdown">
                             <a href="index.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                            <i class="ddl-switch fa fa-angle-down"></i>
-
                         </li>
                         <li><a href="about-us.php">About Us</a></li>
                         <li><a href="service.php">Our Services</a></li>
                         <li class="dropdown">
                             <a href="tour-packages.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Tour Package</a>
-                            <i class="ddl-switch fa fa-angle-down"></i>
-
                         </li>
                         <li class="dropdown">								
                             <a href="gallery.php" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                            <i class="ddl-switch fa fa-angle-down"></i>
-
                         </li>
-                        <li class="dropdown">
-                            <!--                        <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Taxi</a>-->
-                            <i class="ddl-switch fa fa-angle-down"></i>
-                            <!--                        <ul class="dropdown-menu">
-                                                        <li><a href="online-booking.html">Online Booking</a></li>
-                                                      
-                                                    </ul>-->
-                        </li>
-                        <!--                    <li><a href="#">Rent a car</a></li>							-->
                         <li><a href="contact-us.php">Contact US</a></li>							
                     </ul>						
                 </div>
