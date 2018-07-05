@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Gallery</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />

@@ -12,7 +12,7 @@ include_once ('class/include.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Tour Package</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -93,7 +93,7 @@ include_once ('class/include.php');
                         <?php foreach (TourPackage::all() as $tour_package) { ?>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <article class="blog-post-list">
-                                    <div class="entry-cover" style="padding-bottom: 10px;">
+                                    <div class="entry-cover t7-padding" >
                                         <a href="tour-packages-view.php?id=<?php echo $tour_package['id'] ?>" >
                                             <img src="upload/tour-package/<?php echo $tour_package['image_name']; ?>" alt=""/>
                                         </a>
@@ -117,7 +117,7 @@ include_once ('class/include.php');
         </div>
 
         <div class="container-fluid" >
-            <div class="row" style="  background-color: black;">
+            <div class="row t6-color" >
                 <div class="header-h1"><h1><b>How It Works</b></h1></div>
                 <div class="container">
                     <div class="col-md-4 col-sm-6">

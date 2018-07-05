@@ -18,7 +18,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Taxi Company HTML5 Template</title>
+    <title>Lotus Cabs - Tour Packages View</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -98,7 +98,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
             <!-- Container -->
             <div class="container">		
                 <!-- Blog Area -->
-                <div class="col-md-12 blog-area" style="padding:20px 0px ">		
+                <div class="col-md-12 blog-area t-padding" >		
                     <div class="section-header">
                         <h3><?php echo $TourId->title ?></h3>
                     </div>
@@ -110,7 +110,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
                     foreach (TourDatePhoto::getTourDatePhotosById($tour_date['id'])as $key => $photo_album) {
                         if ($key < 4) {
                             ?>
-                            <div class="col-md-3" style="margin-top: 20px; padding: 0px;">
+                            <div class="col-md-3 t2-padding" >
 
                                 <a class="example-image-link" href="upload/tour-package/date/gallery/<?php echo $photo_album['image_name'] ?>" data-lightbox="example-1" data-title="option caption"><img class="example-image" src="upload/tour-package/date/gallery/thumb/<?php echo $photo_album['image_name'] ?>" alt="image-1" /></a>
                             </div>
@@ -120,11 +120,11 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
                     ?>
                 </div>
                 <div class="container">	
-                    <div style="padding-top: 20px;"   >
-                        <div class="col-md-12" style="padding: 0px">
+                    <div class="t3-padding"   >
+                        <div class="col-md-12 t4-padding" >
                             <div id="blog-content3">
                                 <h3 class="entry-title"><?php echo $tour_date['title'] ?></h3>
-                                <div class="entry-content" style="margin-left: 16px;">
+                                <div class="entry-content t5-margin" >
                                     <p><?php echo $tour_date['description'] ?></p>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
 
 
     <div class="container-fluid" >
-        <div class="row" style="  background-color: black;">
+        <div class="row t6-color">
             <div class="header-h1"><h1><b>How It Works</b></h1></div>
             <div class="container">
                 <div class="col-md-4 col-sm-6">
@@ -181,29 +181,21 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
 
 <!-- Library - Modernizer -->
 <script src="libraries/modernizr/modernizr.js"></script>
-
 <!-- Library - Bootstrap v3.3.5 -->
 <script src="libraries/bootstrap/bootstrap.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
 <script src="libraries/bootstrap/bootstrap-datetimepicker.min.js"></script><!-- Bootstrap JS File v3.3.5 -->
-
 <!-- jQuery Easing v1.3 -->
 <script src="js/jquery.easing.min.js"></script>
-
 <!-- Library - jQuery.appear -->
 <script src="libraries/appear/jquery.appear.js"></script>
-
 <!-- Library - OWL Carousel V.2.0 beta -->
 <script src="libraries/owl-carousel/owl.carousel.min.js"></script>
-
 <!-- jQuery For Number Counter -->	
 <script src="libraries/number/jquery.animateNumber.min.js"></script>
-
 <!-- Library - Google Map API -->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
 <!-- Library - FlexSlider v2.5.0 -->
 <script defer src="libraries/flexslider/jquery.flexslider.js"></script>
-
 <!-- Library - Theme JS -->
 <script src="js/functions.js"></script>
 <script src="js/lightbox.js" type="text/javascript"></script>
