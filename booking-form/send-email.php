@@ -3,31 +3,26 @@
 
 //----------------------Company Information---------------------
 
-$comany_name = "Cycling Tours, Galle";
-$website_name = "www.srilankacyclingtour.com";
-$comConNumber = "(+94) 77 365 4141, (+94) 91 312 7744";
-$comEmail = "info@srilankacyclingtour.com";
-$from = 'info@srilankacyclingtour.com';
+$comany_name = "Lotu Cabs, Galle";
+$website_name = "www.lotuscabs.com";
+$comConNumber = "+94 91 722 3223";
+$comEmail = "contact@lotuscabs.lk";
+$from = 'contact@lotuscabs.lk';
 
 //----------------------CAPTCHACODE---------------------
 session_start();
 
 $response = array();
-if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
-    $response['status'] = 'incorrect';
-    $response['msg'] = 'Security Code is invalid';
-    echo json_encode($response);
-    exit();
-}
 
 //----------------------Visitor Information---------------------
 
 $visitor_name = $_POST['visitor_name'];
 $visitor_email = $_POST['visitor_email'];
-$visitor_country = $_POST['country'];
-$visitor_phone = $_POST['visitor_phone'];
-$tour_package = $_POST['tour_package'];
-$message = $_POST['message'];
+$start_from = $_POST['start_from'];
+$drop_to = $_POST['drop_to'];
+$passengers = $_POST['passengers'];
+$pick_up_date = $_POST['date'];
+$description = $_POST['description'];
 
 
 date_default_timezone_set('Asia/Colombo');
@@ -62,17 +57,17 @@ if (mail($visitor_email, $subject, $visitor_message, $headers1) && mail($comEmai
     $response['msg'] = "Could nod be sent your message";
     echo json_encode($response);
     exit();
-} 
+}
 
 
 
 //----------------------Company Information---------------------
 
-$comany_name = "Cycling Tours, Galle";
-$website_name = "www.srilankacyclingtour.com";
-$comConNumber = "(+94) 77 365 4141, (+94) 91 312 7744";
-$comEmail = "info@srilankacyclingtour.com";
-$from = 'info@srilankacyclingtour.com';
+$comany_name = "Lotu Cabs, Galle";
+$website_name = "www.lotuscabs.com";
+$comConNumber = "+94 91 722 3223";
+$comEmail = "contact@lotuscabs.lk";
+$from = 'contact@lotuscabs.lk';
 
 //----------------------CAPTCHACODE---------------------
 session_start();
@@ -89,10 +84,11 @@ if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
 
 $visitor_name = $_POST['visitor_name'];
 $visitor_email = $_POST['visitor_email'];
-$visitor_country = $_POST['country'];
-$visitor_phone = $_POST['visitor_phone'];
-$tour_package = $_POST['tour_package'];
-$message = $_POST['message'];
+$start_from = $_POST['start_from'];
+$drop_to = $_POST['drop_to'];
+$passengers = $_POST['passengers'];
+$pick_up_date = $_POST['date'];
+$description = $_POST['description'];
 
 
 date_default_timezone_set('Asia/Colombo');

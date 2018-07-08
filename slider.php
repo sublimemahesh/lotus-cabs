@@ -64,13 +64,10 @@
                         <span id="spanDropPlace" ></span>
                     </div>
                     <div class="form-group col-md-6 slider-form-paddig">
-                        <label for="txt_pickup">Date:</label>                                   
+                        <label for="date">Date:</label>                                   
                         <div id="datepicker" class="input-group">
                             <input class="form-control" type="text" placeholder="YYYY/MM/DD HH:MM"  name="filter-date" id="filter-date"/>
-                            <span class="add-on">
-
-                            </span>
-                            <span id="spanDatePickup" ></span>
+                       
                         </div>
                     </div>
 
@@ -80,15 +77,14 @@
                         <span id="spanNumberOfPassengers" ></span>
                     </div>
                     <div class="form-group col-md-12 slider-form-paddig">
-                        <label for="txt_passengers_description">Description :</label>
-                        <textarea class="form-control" rows="4" cols="22" id="txtMessage" name="contact-message" placeholder="Description:" required></textarea>
-
-                        <span id="spanNumberOfPassengers" ></span>
+                        <label for="txt_description">Description :</label>
+                        <textarea class="form-control" rows="4" cols="22" id="txt_description" name="contact-message" placeholder="Description:" required></textarea>
+                        <span id="spanDescription" ></span>
                     </div>
 
 
                     <div class="col-md-12 slider-form-paddig">
-                        <button type="submit" id="btnSubmit" title="submit" class="btn">Submit</button></div>
+                        <button type="submit" id="btn_submit" title="submit" class="btn">Submit</button></div>
                     <div id="dismessage-msg" class="alert-msg"></div>
 
                 </div>
