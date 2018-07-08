@@ -84,7 +84,7 @@ include_once ('class/include.php');
         </div><!-- Banner Section /- -->
 
         <!-- What We Do -->
-        <div class="container no-padding what-we-do ">
+        <div class="container no-padding what-we-do marging-p">
             <!-- Container -->
             <div class="row r-top" >
                 <div class="col-md-4 col-xs-12 col-sm-12">
@@ -124,7 +124,7 @@ include_once ('class/include.php');
                 </div>
 
             </div>
-            <div class="container-fluid c-top" >			
+            <div class="container-fluid c-top marging-p" >			
                 <div class=" row">
                     <?php
                     $PAGES = new Page(1);

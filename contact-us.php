@@ -85,7 +85,7 @@
 
 
             <!-- Contact Form -->
-            <div class="contact-form container-fluid no-padding">		
+            <div class="contact-form container-fluid no-padding marging-p">		
                 <div class="section-padding"></div>
                 <!-- Container -->
                 <div class="container">

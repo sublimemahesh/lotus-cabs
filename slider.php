@@ -80,7 +80,7 @@
                         <span id="spanNumberOfPassengers" ></span>
                     </div>
                     <div class="form-group col-md-12 slider-form-paddig">
-                        <label for="txt_passengers">Description :</label>
+                        <label for="txt_passengers_description">Description :</label>
                         <textarea class="form-control" rows="4" cols="22" id="txtMessage" name="contact-message" placeholder="Description:" required></textarea>
 
                         <span id="spanNumberOfPassengers" ></span>

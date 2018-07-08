@@ -86,7 +86,7 @@ include_once ('class/include.php');
 
 
         <div class="row">
-            <div class="container-fluid no-padding blog">
+            <div class="containerw no-padding blog marging-p">
                 <div class="section-padding1"></div>
                 <div class="container">	
                     <div class="row">
