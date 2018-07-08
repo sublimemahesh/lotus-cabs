@@ -92,7 +92,7 @@ $tour_dates = $Tour_Date->getTourDatesById($id);
 
 
 
-        <div class="container-fluid no-padding page-content">
+        <div class="container no-padding page-content">
             <!-- Page Content -->
             <div class="section-padding"></div>
             <!-- Container -->

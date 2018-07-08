@@ -103,7 +103,6 @@ include_once ('class/include.php');
                     <div class="we-do-more ">
                         <h3>Welcome to </h3>
                         <h2>lotus cabs & Tourist - Sri Lanka</h2>
-
                         <p class="text-justify"><?php echo $PAGES->description ?></p>
                     </div>
 

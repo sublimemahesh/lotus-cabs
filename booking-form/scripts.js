@@ -26,6 +26,9 @@ jQuery(document).ready(function () {
     jQuery("#txt_passengers").blur(function () {
         validateEmpty("txt_passengers", "spanNumberOfPassengers");
     });
+    jQuery("#txt_description").blur(function () {
+        validateEmpty("txt_passengers", "spanNumberOfPassengers");
+    });
 
     jQuery("#btnSubmit").bind('click', function () {
 
@@ -61,6 +64,7 @@ function validate() {
             validateEmpty("txt_drop", "spanDropPlace") &
             validateEmpty("txt_pickup", "spanDatePickup") &
             validateEmpty("txt_passengers", "spanNumberOfPassengers") &
+            validateEmpty("txt_description", "spanDescription") &
             validateEmpty("captchacode", "capspan")
             )
     {
@@ -89,7 +93,8 @@ function sendForm() {
             start_from: jQuery('#txt_startfrom').val(),
             drop_to: jQuery('#txt_drop').val(),
             pick_up: jQuery('#txt_pickup').val(),
-            passengers: jQuery('#txt_passengers').val()
+            passengers: jQuery('#txt_passengers').val(),
+            description: jQuery('#txt_description').val()
 
         },
         success: function (html) {
@@ -193,6 +198,9 @@ jQuery(document).ready(function () {
     jQuery("#txt_passengers").blur(function () {
         validateEmpty("txt_passengers", "spanNumberOfPassengers");
     });
+    jQuery("#txt_description").blur(function () {
+        validateEmpty("txt_description", "spanDescription");
+    });
 
     jQuery("#btnSubmit").bind('click', function () {
 
@@ -228,6 +236,7 @@ function validate() {
             validateEmpty("txt_drop", "spanDropPlace") &
             validateEmpty("txt_pickup", "spanDatePickup") &
             validateEmpty("txt_passengers", "spanNumberOfPassengers") &
+            validateEmpty("txt_description", "spanDescription") &
             validateEmpty("captchacode", "capspan")
             )
     {
@@ -256,7 +265,8 @@ function sendForm() {
             start_from: jQuery('#txt_startfrom').val(),
             drop_to: jQuery('#txt_drop').val(),
             pick_up: jQuery('#txt_pickup').val(),
-            passengers: jQuery('#txt_passengers').val()
+            passengers: jQuery('#txt_passengers').val(),
+            description: jQuery('#txt_description').val()
 
         },
         success: function (html) {
