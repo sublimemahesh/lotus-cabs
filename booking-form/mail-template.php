@@ -18,7 +18,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/contact-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/booking-from/img/lotus-logo.jpg" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -123,37 +123,22 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Country : ' . $visitor_country . '
+                                                         Start Location : ' . $start_from . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Telephone No : ' . $visitor_phone . '
+                                                         Drop Location : ' . $drop_to . '
                                                     </font>
                                                 </li>
                                                  <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour Package : ' . $tour_package . '
+                                                         Pick Up Date : ' . $pick_up_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         From : ' . $start_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         To : ' . $end_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Adults : ' . $no_of_adults . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Children : ' . $no_of_children . '
+                                                         Passengers : ' . $passengers . '
                                                     </font>
                                                 </li>
                                                 
@@ -171,7 +156,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="5%">&nbsp;</td>
                                         <td width="90%" valign="middle">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                               ' . $message . '
+                                               ' . $description . '
                                             </font>
                                         </td>
                                         <td width="5%">&nbsp;</td>
@@ -187,7 +172,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/contact-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -335,39 +320,25 @@ $company_message = '
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Country : ' . $visitor_country . '
+                                                         Start Location : ' . $start_from . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Telephone No : ' . $visitor_phone . '
+                                                         Drop Location : ' . $drop_to . '
+                                                    </font>
+                                                </li>
+                                                 <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Pick Up Date : ' . $pick_up_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour Package : ' . $tour_package . '
+                                                         Passengers : ' . $passengers . '
                                                     </font>
                                                 </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         From : ' . $start_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         To : ' . $end_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Adults : ' . $no_of_adults . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Children : ' . $no_of_children . '
-                                                    </font>
-                                                </li>
+                                                
                                             </ul>
                                         </td>
                                         <td width="2%">&nbsp;</td>
@@ -381,7 +352,7 @@ $company_message = '
                                         <td width="5%">&nbsp;</td>
                                         <td width="90%" valign="middle">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                               ' . $message . '
+                                               ' . $description . '
                                             </font>
                                         </td>
                                         <td width="5%">&nbsp;</td>
@@ -397,7 +368,7 @@ $company_message = '
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/contact-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -428,7 +399,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="40"></td>
                                         <td width="144">
                                             <a href= "' . $site_link . '" target="_blank"> '
-        . '<img src="' . $site_link . '/contact-form/img/logo.jpg" border="0" alt=""/>
+        . '<img src="' . $site_link . '/booking-from/img/lotus-logo.jpg" border="0" alt=""/>
                                             </a>
                                         </td>
                                         <td width="393">
@@ -520,7 +491,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
                                                    <h4>&nbsp;&nbsp;&nbsp;Inquiry Detail</h4>
                                             </font>
-                                            <ul>
+                                             <ul>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Name : ' . $visitor_name . '
@@ -533,39 +504,26 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Country : ' . $visitor_country . '
+                                                         Start Location : ' . $start_from . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Telephone No : ' . $visitor_phone . '
+                                                         Drop Location : ' . $drop_to . '
                                                     </font>
                                                 </li>
                                                  <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour Package : ' . $tour_package . '
+                                                         Pick Up Date : ' . $pick_up_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         From : ' . $start_date . '
+                                                         Passengers : ' . $passengers . '
                                                     </font>
                                                 </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         To : ' . $end_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Adults : ' . $no_of_adults . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Children : ' . $no_of_children . '
-                                                    </font>
-                                                </li>
+                                                
+                                                
                                                 
                                             </ul>
                                         </td>
@@ -581,7 +539,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                                         <td width="5%">&nbsp;</td>
                                         <td width="90%" valign="middle">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                               ' . $message . '
+                                               ' . $description . '
                                             </font>
                                         </td>
                                         <td width="5%">&nbsp;</td>
@@ -597,7 +555,7 @@ $visitor_message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//E
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/contact-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -732,7 +690,7 @@ $company_message = '
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#1400FF; font-size:14px; " >
                                                    <h4>&nbsp;&nbsp;&nbsp;Inquiry Detail</h4>
                                             </font>
-                                            <ul>
+                                             <ul>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
                                                          Name : ' . $visitor_name . '
@@ -745,39 +703,25 @@ $company_message = '
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Country : ' . $visitor_country . '
+                                                         Start Location : ' . $start_from . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Telephone No : ' . $visitor_phone . '
+                                                         Drop Location : ' . $drop_to . '
+                                                    </font>
+                                                </li>
+                                                 <li>
+                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
+                                                         Pick Up Date : ' . $pick_up_date . '
                                                     </font>
                                                 </li>
                                                 <li>
                                                     <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         Tour Package : ' . $tour_package . '
+                                                         Passengers : ' . $passengers . '
                                                     </font>
                                                 </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         From : ' . $start_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         To : ' . $end_date . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Adults : ' . $no_of_adults . '
-                                                    </font>
-                                                </li>
-                                                <li>
-                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                                         No Of Children : ' . $no_of_children . '
-                                                    </font>
-                                                </li>
+                                                
                                             </ul>
                                         </td>
                                         <td width="2%">&nbsp;</td>
@@ -791,7 +735,7 @@ $company_message = '
                                         <td width="5%">&nbsp;</td>
                                         <td width="90%" valign="middle">
                                             <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-                                               ' . $message . '
+                                               ' . $description . '
                                             </font>
                                         </td>
                                         <td width="5%">&nbsp;</td>
@@ -807,7 +751,7 @@ $company_message = '
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><img src="' . $site_link . '/contact-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
+                            <td><img src="' . $site_link . '/booking-form/img/PROMO-GREEN2_07.jpg" width="598" height="7" style="display:block" border="0" alt=""/></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -818,5 +762,4 @@ $company_message = '
         </table>
     </body>
 </html>';
-
 ?>
