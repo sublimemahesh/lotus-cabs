@@ -109,7 +109,7 @@
                                     <span id="spanEmail"></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 form-group">
-                                    <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Phone:" required>
+                                    <input type="text" class="form-control" id="txtPhone" name="txtPhoneNumber" placeholder="Phone:" required>
                                     <span id="spanPhone"></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 form-group">
@@ -136,8 +136,8 @@
                                 <div class="col-md-12">
                                     <button type="submit" id="btn_submit" class="btn btn-default" style="margin-right: 560px;">Send Message</button>
                                 </div>
-                                <div id="dismessage-msg" class="alert-msg"></div>
                             </form>
+                               <div id="dismessage" align="center"></div>
                         </div>
                     </div>
                 </div><!-- Container /- -->

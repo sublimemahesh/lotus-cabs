@@ -6,8 +6,8 @@ $comany_name = " lotus cabs ";
 $website_name = "www.lotuscabs.lk";
 $comConNumber = " 0912 228 200|";
 //$comEmail = "info@bouldersbay.com";
-$comEmail = "mganisansala@gmail.com";
-$from = "mganisansala@gmail.com";
+$comEmail = "contact@lotuscabs.lk";
+$from = "contact@lotuscabs.lk";
 
 //----------------------CAPTCHACODE---------------------
 session_start();
