@@ -18,7 +18,6 @@
                     </div>
                 <?php } else {
                     ?>
-
                     <div class="item">
                         <img src="upload/slider/<?php echo $slider_image['image_name'] ?>" alt=""/>
                         <div class="container photos-slider2-content">						
@@ -33,8 +32,6 @@
                 }
             }
             ?>
-
-
         </div>
     </div>
     <!-- Booking Form -->
@@ -67,10 +64,8 @@
                         <label for="date">Date:</label>                                   
                         <div id="datepicker" class="input-group">
                             <input class="form-control" type="text" placeholder="YYYY/MM/DD HH:MM"  name="filter-date" id="filter-date"/>
-                       
                         </div>
                     </div>
-
                     <div class="form-group col-md-6 slider-form-paddig-right">
                         <label for="txt_passengers">Passengers :</label>
                         <input type="number" class="form-control" id="txt_passengers" placeholder="Passengers" />
@@ -81,12 +76,9 @@
                         <textarea class="form-control" rows="4" cols="22" id="txt_description" name="contact-message" placeholder="Description:" required></textarea>
                         <span id="spanDescription" ></span>
                     </div>
-
-
                     <div class="col-md-12 slider-form-paddig">
                         <button type="submit" id="btn_submit" title="submit" class="btn">Submit</button></div>
                     <div id="dismessage-msg" class="alert-msg"></div>
-
                 </div>
             </div>
         </div>

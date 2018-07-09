@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <?php
+
+
 include_once ('class/include.php');
 ?>
 <head>
@@ -12,7 +14,7 @@ include_once ('class/include.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lotus Cabs - Home Page</title>
+    <title>LOTUS CABS & TOURS- Professional Taxi Services|Lowest Price Guranteed</title>
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="images/lotus-logo.png" />
@@ -102,7 +104,8 @@ include_once ('class/include.php');
                 <div class="col-md-8 pull-right">
                     <div class="we-do-more ">
                         <h3>Welcome to </h3>
-                        <h2>lotus cabs & Tourist - Sri Lanka</h2>
+                        <h2>lotus cabs & Tours - Sri Lanka</h2>
+
                         <p class="text-justify"><?php echo $PAGES->description ?></p>
                     </div>
 
@@ -234,37 +237,7 @@ include_once ('class/include.php');
             <img src="images/border-pattern.jpg" alt="border"/>
         </div><!-- Testimonial/- -->
 
-        <div class="container-fluid" >
-            <div class="row" style="  background-color: black;">
-                <div class="header-h1"><h1><b>How It Works</b></h1></div>
-                <div class="container">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="color-yellow">
-                            <h4>1. Submit Ride Details</h4>
-                        </div>
-                        <ul class="color-white">
-                            Fill- up online ride detail form and submit.
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div  class="color-yellow">
-                            <h4>2. Get the quote</h4>
-                        </div>
-                        <ul class="color-white">
-                            We will send you the best rate availble.
-                        </ul>
-                    </div>           
-                    <div class="col-md-4 col-sm-6">
-                        <div  class="color-yellow">
-                            <h4>3. Confirm the deal. Enjoy your ride.</h4>
-                        </div>
-                        <ul class="color-white">
-                            You can confirm the offered deal online and you will receive the driver details.
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div><!-- Main Container -->
 
 
